@@ -203,6 +203,9 @@ def run_experiments(marts_dir: Path, output_dir: Path, protocol_path: Path, *, s
     started_at = datetime.now(UTC).isoformat()
     preparation_hash = verify_preparation(marts_dir)
     protocol = json.loads(protocol_path.read_text(encoding="utf-8"))
+    inference_jobs = protocol.get("forest_inference_jobs", 1)
+    if type(inference_jobs) is not int or inference_jobs != 1:
+        raise ValueError("The audited protocol requires forest_inference_jobs=1")
     protocol_hash = _hash_object(protocol)
     input_hash = _input_manifest(marts_dir)
     source_hash = _source_fingerprint()
@@ -387,6 +390,8 @@ def run_experiments(marts_dir: Path, output_dir: Path, protocol_path: Path, *, s
         restored = risk_probability(reloaded, Xt)
     if not np.allclose(restored, probability, rtol=1e-12, atol=1e-12):
         raise AssertionError("Reloaded evaluated artifact does not reproduce published predictions")
+    if not np.array_equal(restored >= threshold["threshold"], probability >= threshold["threshold"]):
+        raise AssertionError("Reloaded evaluated artifact changes frozen-threshold decisions")
     if _hash_object({key: value for key, value in lock.items() if key != "lock_hash"}) != lock["lock_hash"]:
         raise AssertionError("Frozen protocol changed during evaluation/refit")
     receipt = {"run_id": run_id, "started_at_utc": started_at,
@@ -394,6 +399,7 @@ def run_experiments(marts_dir: Path, output_dir: Path, protocol_path: Path, *, s
                "sklearn": sklearn.__version__, "numpy": np.__version__, "pandas": pd.__version__,
                "source_fingerprint": source_hash, "protocol_hash": protocol_hash, "input_manifest_hash": input_hash,
                "temporal_lock_verified": True, "evaluated_artifact_reload_verified": True,
+               "evaluated_artifact_decisions_verified": True,
                "status": result["status"], "smoke": smoke}
     try:
         revision = subprocess.run(["rtk", "git", "rev-parse", "HEAD"], cwd=Path(__file__).resolve().parents[3],
