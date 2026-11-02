@@ -186,6 +186,8 @@ python-dateutil==4.0.0
     #   pandas
 pytz==2026.6
     # via pandas
+pyyaml==6.0.3
+    # via tech-challenge-fase3
 pyzmq==27.2.0
     # via
     #   ipykernel
