@@ -239,3 +239,27 @@ def test_first_chunk_without_eligible_students_does_not_lock_null_schema(tmp_pat
     assert counts["eligible_rows"] == 1
     assert counts["excluded_nonpositive_or_missing_weight"] == 1
     assert len(pd.read_parquet(tmp_path / "mart.parquet")) == 1
+
+
+def test_evolution_bytes_and_lag_are_stable_for_shuffled_inputs(tmp_path):
+    from alfabetizacao_ml.data.preparation import _write_evolution
+    frame = pd.DataFrame([
+        {"id_municipio": str(1100000 + municipality), "rede": network,
+         "ano": year, "taxa_alfabetizacao": Decimal(60 + year - 2023)}
+        for municipality in range(2000)
+        for network in ("municipal", "estadual", "publica")
+        for year in (2023, 2025)
+    ])
+    outputs = []
+    for seed in (1, 7, 29):
+        source, destination = tmp_path / f"source_{seed}.parquet", tmp_path / f"evolution_{seed}.parquet"
+        _write_frame(frame.sample(frac=1, random_state=seed), source, ["taxa_alfabetizacao"])
+        _write_evolution(source, destination)
+        outputs.append(destination.read_bytes())
+        result = pd.read_parquet(destination)
+        assert result[["id_municipio", "rede", "ano"]].equals(
+            result.sort_values(["id_municipio", "rede", "ano"])[["id_municipio", "rede", "ano"]])
+        previous = result.loc[result["ano"].eq(2025)]
+        assert previous["ano_anterior_disponivel"].eq(2023).all()
+        assert previous["variacao_pp"].eq(Decimal(2)).all()
+    assert outputs[0] == outputs[1] == outputs[2]

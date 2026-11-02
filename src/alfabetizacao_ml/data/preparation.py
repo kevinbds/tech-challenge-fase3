@@ -374,6 +374,14 @@ def _prepare_students(archive: Path, year: int, directory: pd.DataFrame,
     return counts
 
 
+def _write_evolution(source: Path, destination: Path) -> None:
+    """Keep phase-2 last-observation LAG with a deterministic total row order."""
+    temporary = destination.with_suffix(".parquet.partial")
+    with duckdb.connect() as con:
+        con.execute("COPY (SELECT *,LAG(ano) OVER w AS ano_anterior_disponivel,LAG(taxa_alfabetizacao) OVER w AS taxa_anterior_disponivel,taxa_alfabetizacao-LAG(taxa_alfabetizacao) OVER w AS variacao_pp FROM read_parquet($source) WINDOW w AS (PARTITION BY id_municipio,rede ORDER BY ano) ORDER BY id_municipio,rede,ano) TO $destination (FORMAT PARQUET, COMPRESSION ZSTD)", {"source": str(source), "destination": str(temporary)})
+    temporary.replace(destination)
+
+
 def prepare_data(cache_dir: Path, manifest_path: Path) -> dict:
     root = Path(cache_dir).resolve()
     manifest = verify_manifest(root, Path(manifest_path))
@@ -403,12 +411,8 @@ def prepare_data(cache_dir: Path, manifest_path: Path) -> dict:
     comparative = _comparative(targets, municipal, states, national)
     _write_frame(comparative, output / "gold" / "comparativo_meta_resultado.parquet", ["meta_limite", "taxa_alfabetizacao", "gap_pp"])
     # Keep the phase-2 last-observation LAG product distinct from exact t-1 ML.
-    con = duckdb.connect()
-    try:
-        con.execute("COPY (SELECT *,LAG(ano) OVER w AS ano_anterior_disponivel,LAG(taxa_alfabetizacao) OVER w AS taxa_anterior_disponivel,taxa_alfabetizacao-LAG(taxa_alfabetizacao) OVER w AS variacao_pp FROM read_parquet($source) WINDOW w AS (PARTITION BY id_municipio,rede ORDER BY ano)) TO $destination (FORMAT PARQUET, COMPRESSION ZSTD)", {"source": str(output / "gold" / "indicador_municipio.parquet"), "destination": str(output / "gold" / "evolucao_alfabetizacao.parquet.partial")})
-    finally:
-        con.close()
-    (output / "gold" / "evolucao_alfabetizacao.parquet.partial").replace(output / "gold" / "evolucao_alfabetizacao.parquet")
+    _write_evolution(output / "gold" / "indicador_municipio.parquet",
+                     output / "gold" / "evolucao_alfabetizacao.parquet")
     mart_municipal = municipal.loc[municipal["rede"].eq("municipal")].copy()
     mart_municipal = exact_previous_year_context(mart_municipal, municipal)
     mart_municipal = _enrich(mart_municipal, inse, census)
