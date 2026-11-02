@@ -216,6 +216,9 @@ def acquire_sources(
     path = root / "manifests" / f"{content_id}.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     if not path.exists():
-        path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+        temporary_manifest = path.with_suffix(".json.partial")
+        temporary_manifest.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+        verify_manifest(root, temporary_manifest)
+        temporary_manifest.replace(path)
     verify_manifest(root, path)
     return path

@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import pytest
 
@@ -90,3 +91,23 @@ def test_tampered_metadata_rejected_before_network(tmp_path, monkeypatch, mutati
     monkeypatch.setattr(acquisition, "_download", lambda *_: pytest.fail("Unvalidated manifest contacted network"))
     with pytest.raises(ValueError):
         acquisition.acquire_sources(tmp_path, "reproduce", manifest)
+
+
+def test_interrupted_manifest_write_never_publishes_partial_and_update_recovers(tmp_path, monkeypatch):
+    _fixture_source(monkeypatch)
+    original_write = Path.write_text
+
+    def interrupted_write(path, data, **kwargs):
+        if path.name.endswith(".json.partial"):
+            original_write(path, "{", **kwargs)
+            raise OSError("simulated interruption")
+        return original_write(path, data, **kwargs)
+
+    monkeypatch.setattr(Path, "write_text", interrupted_write)
+    with pytest.raises(OSError, match="simulated interruption"):
+        acquisition.acquire_sources(tmp_path)
+    assert not list((tmp_path / "manifests").glob("*.json"))
+    monkeypatch.setattr(Path, "write_text", original_write)
+    manifest = acquisition.acquire_sources(tmp_path)
+    acquisition.verify_manifest(tmp_path, manifest)
+    assert not list((tmp_path / "manifests").glob("*.partial"))
