@@ -103,7 +103,11 @@ def verify_preparation(marts_dir):
     if any(path.resolve() not in registered for path in marts_dir.glob("*.parquet")):
         raise ValueError("Unregistered mart in prepared snapshot")
     coverage = root / "coverage.json"
-    if not coverage.is_file() or _digest(coverage) != receipt.get("coverage_hash"):
+    if not coverage.is_file():
+        raise ValueError("Coverage report is missing")
+    coverage_hash = hashlib.sha256(json.dumps(json.loads(coverage.read_text(encoding="utf-8")),
+                                   ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+    if coverage_hash != receipt.get("coverage_hash"):
         raise ValueError("Coverage report integrity mismatch")
     if (root / "preparation.in-progress").exists():
         raise ValueError("Snapshot changed while preparation was being verified")

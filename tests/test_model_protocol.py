@@ -1,4 +1,5 @@
 """Adversarial checks of the temporal, weighting and artifact boundaries."""
+import hashlib
 import json
 
 import joblib
@@ -50,7 +51,9 @@ def cohorts():
 def seal_snapshot(marts):
     coverage = marts.parent / "coverage.json"
     coverage.write_text('{"source": "synthetic test fixture"}', encoding="utf-8")
-    receipt = {"status": "passed", "coverage_hash": experiments._digest(coverage), "outputs": {
+    digest = hashlib.sha256(json.dumps(json.loads(coverage.read_text()), ensure_ascii=False,
+                                      sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+    receipt = {"status": "passed", "coverage_hash": digest, "outputs": {
         "marts/" + p.name: {"sha256": experiments._digest(p), "bytes": p.stat().st_size}
         for p in marts.glob("*.parquet")}}
     (marts.parent / "preparation-receipt.json").write_text(json.dumps(receipt), encoding="utf-8")
