@@ -119,7 +119,7 @@ def cluster_municipalities(frame, *, seed=42, smoke=False):
             assignment = model.fit_predict(X)
             if len(np.unique(assignment)) < 2:
                 continue
-            score = float(silhouette_score(X, assignment, sample_size=min(len(X), 2000), random_state=seed))
+            score = float(silhouette_score(X, assignment))
             records.append({"k": k, "silhouette": score, "inertia": float(model.inertia_)})
             models[k] = model
         if not records:

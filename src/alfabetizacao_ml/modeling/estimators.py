@@ -3,6 +3,7 @@
 import copy
 
 import numpy as np
+import pandas as pd
 from sklearn.base import BaseEstimator, ClassifierMixin, RegressorMixin
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.ensemble import (
@@ -117,15 +118,39 @@ def make_regressor(name: str, params: dict | None = None, *, seed: int = 42, thr
 
 def fit_weighted(estimator, X, y, weights=None):
     if isinstance(estimator, Pipeline):
-        return estimator.fit(X, y, **({"model__sample_weight": weights} if weights is not None else {}))
-    return estimator.fit(X, y, sample_weight=weights)
+        fitted = estimator.fit(X, y, **({"model__sample_weight": weights} if weights is not None else {}))
+        model = fitted.named_steps["model"]
+    else:
+        fitted = estimator.fit(X, y, sample_weight=weights)
+        model = fitted
+    if isinstance(model, (RandomForestClassifier, RandomForestRegressor)):
+        # Training is parallel; predictions have deterministic tree accumulation.
+        model.n_jobs = 1
+    return fitted
+
+
+def _forest_estimator(estimator):
+    while isinstance(estimator, (Pipeline, CalibratedClassifierCV, FrozenEstimator)):
+        estimator = estimator.named_steps["model"] if isinstance(estimator, Pipeline) else estimator.estimator
+    return estimator if isinstance(estimator, (RandomForestClassifier, RandomForestRegressor)) else None
 
 
 def risk_probability(estimator, X) -> np.ndarray:
     index = np.flatnonzero(np.asarray(estimator.classes_) == 1)
     if len(index) != 1:
         raise ValueError("Estimator must expose the positive risk class 1")
-    p = np.asarray(estimator.predict_proba(X)[:, index[0]], dtype=float)
+    forest = _forest_estimator(estimator)
+    if forest is not None and forest.n_jobs != 1:
+        raise ValueError("RandomForest inference must use deterministic serial tree accumulation")
+    if forest is not None and isinstance(X, pd.DataFrame) and len(X):
+        # Equality-checked pandas grouping, including missing/category values;
+        # no hash-only surrogate and no compression of any training population.
+        codes = X.groupby(list(X.columns), sort=False, dropna=False, observed=True).ngroup().to_numpy(dtype=int)
+        _, first = np.unique(codes, return_index=True)
+        unique_probability = estimator.predict_proba(X.iloc[first])[:, index[0]]
+        p = np.asarray(unique_probability[codes], dtype=float)
+    else:
+        p = np.asarray(estimator.predict_proba(X)[:, index[0]], dtype=float)
     if not (np.isfinite(p).all() and ((p >= 0) & (p <= 1)).all()):
         raise ValueError("Invalid predicted risk probabilities")
     return p

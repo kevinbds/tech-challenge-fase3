@@ -151,8 +151,8 @@ def test_weighted_rf_export_removes_training_weights_without_prediction_change()
     exported = inference_only_copy(model)
     assert base.named_steps["model"]._sample_weight is not None
     assert exported.estimator.estimator.named_steps["model"]._sample_weight is None
-    # Parallel tree accumulation can differ at machine epsilon between calls.
-    np.testing.assert_allclose(risk_probability(model, X), risk_probability(exported, X), rtol=1e-12, atol=1e-12)
+    assert base.named_steps["model"].n_jobs == 1
+    np.testing.assert_array_equal(risk_probability(model, X), risk_probability(exported, X))
 
 
 def test_full_smoke_lock_reload_and_future_label_attack(tmp_path, monkeypatch):
