@@ -48,11 +48,12 @@ def _student_aggregates(con: duckdb.DuckDBPyConnection, marts: Path) -> tuple[di
         if observed != [(year,)]:
             raise ValueError("Student development partition contains an unexpected year")
     relation = con.read_parquet([str(path) for path in paths], union_by_name=True)
-    relation.project(",".join(["ano", "rede", "sigla_uf", "alfabetizado", "peso_aluno", *FEATURES])).create_view("development")
+    relation.project(",".join(["ano", "serie", "rede", "sigla_uf", "alfabetizado", "peso_aluno", *FEATURES])).create_view("development")
     invalid = con.execute("""SELECT count(*) FROM development WHERE
         alfabetizado IS NULL OR alfabetizado NOT IN (0,1) OR peso_aluno IS NULL
         OR peso_aluno<=0 OR NOT isfinite(peso_aluno)
-        OR rede NOT IN ('estadual','municipal')""").fetchone()[0]
+        OR rede IS NULL OR rede NOT IN ('estadual','municipal')
+        OR serie IS NULL OR serie<>2""").fetchone()[0]
     if invalid:
         raise ValueError("EDA requires the validated eligible student population")
     summaries = {}

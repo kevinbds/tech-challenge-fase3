@@ -21,7 +21,7 @@ def fixture_marts(tmp_path):
     marts.mkdir(parents=True)
     coverage = {"students": {}}
     for year in (2023, 2024):
-        frame = pd.DataFrame({"ano": [year] * 40, "rede": ["municipal"] * 40,
+        frame = pd.DataFrame({"ano": [year] * 40, "serie": [2] * 40, "rede": ["municipal"] * 40,
                               "sigla_uf": ["RO"] * 40, "alfabetizado": [1, 0] * 20,
                               "peso_aluno": [1.0, 3.0] * 20,
                               **{name: [None if year == 2023 else 60.0] * 40 for name in FEATURES}})
@@ -85,6 +85,17 @@ def test_mislabelled_student_partition_blocks_analysis(tmp_path):
     frame.loc[0, "ano"] = 2025
     frame.to_parquet(path)
     with duckdb.connect() as con, pytest.raises(ValueError, match="unexpected year"):
+        _student_aggregates(con, marts)
+
+
+@pytest.mark.parametrize("column,value", [("rede", None), ("serie", 3), ("serie", None)])
+def test_ineligible_network_or_grade_blocks_analysis_independently(tmp_path, column, value):
+    marts = fixture_marts(tmp_path)
+    path = marts / "alunos_2024.parquet"
+    frame = pd.read_parquet(path)
+    frame[column] = value
+    frame.to_parquet(path, index=False)
+    with duckdb.connect() as con, pytest.raises(ValueError, match="validated eligible"):
         _student_aggregates(con, marts)
 
 
