@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tech-challenge-fase3"
+version = "0.1.0"
+description = "Predição contextual e inteligência analítica para alfabetização no Brasil"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "duckdb>=1.2,<2", "pandas>=2.2,<3", "pyarrow>=18,<24",
+  "scikit-learn>=1.6,<2", "scipy>=1.14,<2", "numpy>=2,<3",
+  "matplotlib>=3.9,<4", "seaborn>=0.13,<1", "shap>=0.47,<1",
+  "openpyxl>=3.1,<4", "httpx>=0.28,<1", "pypdf>=5,<7",
+  "nbformat>=5.10,<6", "nbclient>=0.10,<1", "ipykernel>=6,<8",
+  "playwright>=1.50,<2", "joblib>=1.4,<2", "typer>=0.15,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pytest-cov>=6,<8", "ruff>=0.11,<1"]
+
+[project.scripts]
+fase3 = "alfabetizacao_ml.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/alfabetizacao_ml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
