@@ -323,6 +323,8 @@ def _prepare_students(archive: Path, year: int, directory: pd.DataFrame,
             eligible = eligible.loc[eligible["alfabetizado"].notna()].copy()
             counts["excluded_nonpositive_or_missing_weight"] += int((~eligible["peso_aluno"].gt(0)).sum())
             eligible = eligible.loc[eligible["peso_aluno"].gt(0)].copy()
+            if eligible.empty:
+                continue
             eligible["alfabetizado"] = eligible["alfabetizado"].astype("int8")
             eligible["risco"] = (1 - eligible["alfabetizado"]).astype("int8")
             # Contemporaneous outcomes survive only in private Silver. The mart

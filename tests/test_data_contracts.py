@@ -221,3 +221,21 @@ def test_target_workbook_horizons_and_network_contract(tmp_path):
     pd.DataFrame([row]).to_excel(path, index=False, startrow=1)
     with pytest.raises(ValueError, match="unexpected network"):
         _targets(path, municipal=False)
+
+
+def test_first_chunk_without_eligible_students_does_not_lock_null_schema(tmp_path, monkeypatch):
+    from alfabetizacao_ml.data import preparation
+    archive = _synthetic_students_zip(tmp_path / "chunks.zip", [{"VL_PESO_ALUNO_LP": "0"}, {}])
+    raw = preparation._read_csv(archive, "DADOS/TS_ALUNO.csv")
+    monkeypatch.setattr(preparation, "_read_csv", lambda *_args, **_kwargs: iter([raw.iloc[:1], raw.iloc[1:]]))
+    directory = pd.DataFrame({"id_municipio": ["1100015"], "sigla_uf": ["RO"], "regiao": ["Norte"]})
+    historic = pd.DataFrame({"ano": [2023], "id_municipio": ["1100015"], "rede": ["municipal"],
+                             "taxa_alfabetizacao": [60], "media_portugues": [720]})
+    inse = pd.DataFrame({"id_municipio": ["1100015"], "rede": ["municipal"], "media_inse_2021": [5.0]})
+    census = pd.DataFrame({"id_municipio": ["1100015"], "populacao_2022": [100], "densidade_2022": [1]})
+    counts = _prepare_students(archive, 2024, directory, historic, inse, census,
+                               tmp_path / "silver.parquet", tmp_path / "mart.parquet")
+    assert counts["raw_rows"] == 2
+    assert counts["eligible_rows"] == 1
+    assert counts["excluded_nonpositive_or_missing_weight"] == 1
+    assert len(pd.read_parquet(tmp_path / "mart.parquet")) == 1
