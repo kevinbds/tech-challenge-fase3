@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "content_id": "f903329983a639b43f6997b4d8542b12b8e6960c34e0765e1b399fb708e99493",
+  "snapshot_id": "local-f903329983a639b4",
+  "sources": [
+    {
+      "id": "aeeb_2023",
+      "url": "https://download.inep.gov.br/dados_abertos/microdados_avaliacao_da_alfabetizacao_2023.zip",
+      "filename": "microdados_avaliacao_da_alfabetizacao_2023.zip",
+      "observation_year": 2023,
+      "kind": "aeeb_zip",
+      "sha256": "3b5a9a2e5f20deba2878cd754149c49854d88b76f2048d69f87e6aa182eda803",
+      "bytes": 17555106,
+      "relative_path": "bronze/aeeb_2023/3b5a9a2e5f20deba2878cd754149c49854d88b76f2048d69f87e6aa182eda803/microdados_avaliacao_da_alfabetizacao_2023.zip",
+      "publication_date": null
+    },
+    {
+      "id": "aeeb_2024",
+      "url": "https://download.inep.gov.br/dados_abertos/microdados_avaliacao_da_alfabetizacao_2024.zip",
+      "filename": "microdados_avaliacao_da_alfabetizacao_2024.zip",
+      "observation_year": 2024,
+      "kind": "aeeb_zip",
+      "sha256": "1d698162ff6b478dfd4a923dd858fc7b0f1704679a438d8334e0ed1046ccba7e",
+      "bytes": 21704063,
+      "relative_path": "bronze/aeeb_2024/1d698162ff6b478dfd4a923dd858fc7b0f1704679a438d8334e0ed1046ccba7e/microdados_avaliacao_da_alfabetizacao_2024.zip",
+      "publication_date": null
+    },
+    {
+      "id": "aeeb_2025",
+      "url": "https://download.inep.gov.br/dados_abertos/microdados_AEEB_2025.zip",
+      "filename": "microdados_AEEB_2025.zip",
+      "observation_year": 2025,
+      "kind": "aeeb_zip",
+      "sha256": "3de5a867e49e38548d220ef547f05416665f6969b25c1860f9a6f5590f88c874",
+      "bytes": 43956518,
+      "relative_path": "bronze/aeeb_2025/3de5a867e49e38548d220ef547f05416665f6969b25c1860f9a6f5590f88c874/microdados_AEEB_2025.zip",
+      "publication_date": null
+    },
+    {
+      "id": "metas_uf_brasil_2024",
+      "url": "https://download.inep.gov.br/alfabetiza_brasil/resultados_e_metas_ufs_2024_2.xlsx",
+      "filename": "resultados_e_metas_ufs_2024_2.xlsx",
+      "observation_year": 2024,
+      "kind": "metas_uf_xlsx",
+      "sha256": "99bfaa63ddc0109570e27933d23af2def5c03073918f5fca042b274a51ab958c",
+      "bytes": 15230,
+      "relative_path": "bronze/metas_uf_brasil_2024/99bfaa63ddc0109570e27933d23af2def5c03073918f5fca042b274a51ab958c/resultados_e_metas_ufs_2024_2.xlsx",
+      "publication_date": null
+    },
+    {
+      "id": "metas_municipios_2024",
+      "url": "https://download.inep.gov.br/alfabetiza_brasil/resultados_e_metas_municipios_2024.xlsx",
+      "filename": "resultados_e_metas_municipios_2024.xlsx",
+      "observation_year": 2024,
+      "kind": "metas_municipio_xlsx",
+      "sha256": "64cf09f3dc0d3f9c6b1298f11ef4a8f3803e91d038f98fe99379558f858363e7",
+      "bytes": 629758,
+      "relative_path": "bronze/metas_municipios_2024/64cf09f3dc0d3f9c6b1298f11ef4a8f3803e91d038f98fe99379558f858363e7/resultados_e_metas_municipios_2024.xlsx",
+      "publication_date": null
+    },
+    {
+      "id": "inse_2021",
+      "url": "https://download.inep.gov.br/informacoes_estatisticas/indicadores_educacionais/2021/nivel_socioeconomico/INSE_2021_municipios.xlsx",
+      "filename": "INSE_2021_municipios.xlsx",
+      "observation_year": 2021,
+      "kind": "inse_xlsx",
+      "sha256": "fe467b90efff622d9cbdd19934710b1123968e8160dd639d3766acc29e8ca157",
+      "bytes": 6568528,
+      "relative_path": "bronze/inse_2021/fe467b90efff622d9cbdd19934710b1123968e8160dd639d3766acc29e8ca157/INSE_2021_municipios.xlsx",
+      "publication_date": null
+    },
+    {
+      "id": "ibge_censo_2022",
+      "url": "https://servicodados.ibge.gov.br/api/v3/agregados/4714/periodos/2022/variaveis/93%7C614?localidades=N6[all]",
+      "filename": "ibge_4714_2022.json",
+      "observation_year": 2022,
+      "kind": "ibge_censo_json",
+      "sha256": "fd444bcc7181c785102a93afd166d262279051f0a8e39ecfa170cbe4ac810bc5",
+      "bytes": 1380464,
+      "relative_path": "bronze/ibge_censo_2022/fd444bcc7181c785102a93afd166d262279051f0a8e39ecfa170cbe4ac810bc5/ibge_4714_2022.json",
+      "publication_date": null
+    },
+    {
+      "id": "ibge_municipios",
+      "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios?orderBy=id",
+      "filename": "ibge_municipios.json",
+      "observation_year": null,
+      "kind": "ibge_directory_json",
+      "sha256": "86ecdccdf97d72e7e5e46f0854cfcea8bacc28154cc1bc4ed0e6110e3a6c9c02",
+      "bytes": 2470036,
+      "relative_path": "bronze/ibge_municipios/86ecdccdf97d72e7e5e46f0854cfcea8bacc28154cc1bc4ed0e6110e3a6c9c02/ibge_municipios.json",
+      "publication_date": null
+    }
+  ]
+}

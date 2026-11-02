@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "run_id": "run-c0dde53efb206a89",
+  "execution_revision": "33ea6a190fdedf5cbcf485cfb392591d046e839c",
+  "scientific_revision": "04922234acc2d03e5b77b1f1a3426917505a098e",
+  "source_fingerprint": "aff04ac326b8784fb38ccd56a0b52fb40a6c7e6eac4eb480454669fd70688aa8",
+  "execution_protocol_hash": "941cc70d9410d4b7e97551aad065d4b989346330ff3cd34e4f4a7a598f245c5f",
+  "current_protocol_hash": "a33a8c38eb3e346e599ec56f995211f25c2df5154318a08b3b9e02a42d3205dd",
+  "scientific_parameters_unchanged": true,
+  "scientific_sources": [
+    {
+      "path": "src/alfabetizacao_ml/modeling/__init__.py",
+      "sha256": "f037afd81dcb30bb5670abd436ea756cef327ffb74e430b1b03a08f3f643a6f6"
+    },
+    {
+      "path": "src/alfabetizacao_ml/modeling/estimators.py",
+      "sha256": "d69fff75b70a001e70145fa73c53328d8632d322d07038e55b05cefc78e075d2"
+    },
+    {
+      "path": "src/alfabetizacao_ml/modeling/experiments.py",
+      "sha256": "13c1b7300812ef0fe9d17df2f89d5fddeafb48728bb5390115f6701fb9084655"
+    },
+    {
+      "path": "src/alfabetizacao_ml/modeling/profile.py",
+      "sha256": "453040b4c40f252ca6c57eb711f098b10e6a5778bd175d0dd9fec507a251b253"
+    },
+    {
+      "path": "src/alfabetizacao_ml/modeling/selection.py",
+      "sha256": "95f77dd6f4252e3ddbf4da502450febe9f65ad726644b464b2662a6f5247a6ac"
+    },
+    {
+      "path": "src/alfabetizacao_ml/preprocessing/__init__.py",
+      "sha256": "24e2ced2b5c745ef2e87f0f67e95ad50072b742ff3ea2d351fe3470e7824e64b"
+    },
+    {
+      "path": "src/alfabetizacao_ml/preprocessing/features.py",
+      "sha256": "63612ab06d86764b8c9be1fad996f2272b7874fff94054f4ebf89d482714b09d"
+    },
+    {
+      "path": "src/alfabetizacao_ml/preprocessing/splits.py",
+      "sha256": "74122078f610a4975fe6481789728af019c9011154025432237f978966e219db"
+    },
+    {
+      "path": "src/alfabetizacao_ml/evaluation/__init__.py",
+      "sha256": "53fca81c125baaf678c2b75dc239c481e90c31a3a955fa0628bdcdd97795e652"
+    },
+    {
+      "path": "src/alfabetizacao_ml/evaluation/interpretation.py",
+      "sha256": "f6144f6609b1c3958632e65abe6dafc66bf9f7d439295f045a44e04a92281e54"
+    },
+    {
+      "path": "src/alfabetizacao_ml/evaluation/metrics.py",
+      "sha256": "15903ab60b120a4dd11b84534715998983407b9180188fb7db1b37061e8a327c"
+    },
+    {
+      "path": "src/alfabetizacao_ml/evaluation/uncertainty.py",
+      "sha256": "0de97c075ba0af3b423ca4803047190fce30616fbac7c0b8c13aead66453d0bc"
+    }
+  ],
+  "metrics_sha256": "0470ec0f5db4bfab13e80ce5b817b71f30ccaf72da5a4da93bebcdd9ba5ce158"
+}

@@ -1,0 +1,42 @@
+{
+  "run_id": "run-c0dde53efb206a89",
+  "protocol_hash": "941cc70d9410d4b7e97551aad065d4b989346330ff3cd34e4f4a7a598f245c5f",
+  "input_manifest_hash": "68e5ea6ba3294d83e36a800ce2cfba3772ce82dd3aad2b9914de696ff1824ca4",
+  "preparation_receipt_hash": "404c516b7cd87802a848eeedbe937869599c108080c75ed819f4a2663586e91b",
+  "source_fingerprint": "aff04ac326b8784fb38ccd56a0b52fb40a6c7e6eac4eb480454669fd70688aa8",
+  "student_partition_hash": "f2db04de22a6c0bdfc6148db01cb37d7f6c1969d414fcbd4440fcc397ce6a00f",
+  "municipal_partition_hash": "f2db04de22a6c0bdfc6148db01cb37d7f6c1969d414fcbd4440fcc397ce6a00f",
+  "classifier": {
+    "name": "random_forest",
+    "params": {
+      "n_estimators": 200,
+      "min_samples_leaf": 50,
+      "max_features": "sqrt",
+      "max_depth": 16
+    },
+    "base_fingerprint": "ea97b3867fcaa34a136ecd67d220cca8",
+    "calibrated_fingerprint": "381201d6c7f3fd87acffd8cbf8d242f9",
+    "threshold": {
+      "threshold": 0.18495304762795337,
+      "f2": 0.7622448346900605,
+      "recall": 0.9856542751513103,
+      "rule": "max weighted F2; ties recall then smaller threshold"
+    }
+  },
+  "regressor": {
+    "name": "hist_gradient_boosting",
+    "params": {
+      "max_leaf_nodes": 15,
+      "max_iter": 250,
+      "learning_rate": 0.03,
+      "l2_regularization": 10
+    },
+    "fingerprint": "d59ec01e69f4fd6e1b1764bb1e6a1285"
+  },
+  "residual_quantiles": [
+    -21.896798790715955,
+    17.239869705992287
+  ],
+  "future_test_opened": false,
+  "lock_hash": "0740a7d704d72ffd40a0e1208bdc56488ac87e58dfb705df52a111fb51c775dc"
+}

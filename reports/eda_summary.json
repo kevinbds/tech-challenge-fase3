@@ -1,0 +1,2527 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "development_years": [
+    2023,
+    2024
+  ],
+  "test_labels_used": false,
+  "test_metrics_used": false,
+  "students": {
+    "year": [
+      {
+        "ano": 2023,
+        "eligible_n": 1502809,
+        "weight_sum": 1743618.1381044018,
+        "literacy_pct": 57.4621629551,
+        "nonliteracy_pct": 42.5378370449,
+        "unweighted_literacy_pct": 58.385796199,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "eligible_n": 1851828,
+        "weight_sum": 2109149.9052244057,
+        "literacy_pct": 59.1996224365,
+        "nonliteracy_pct": 40.8003775635,
+        "unweighted_literacy_pct": 59.7843320222,
+        "rate_suppressed": false
+      }
+    ],
+    "year_network": [
+      {
+        "ano": 2023,
+        "rede": "estadual",
+        "eligible_n": 131522,
+        "weight_sum": 155223.2801480001,
+        "literacy_pct": 60.0934538253,
+        "nonliteracy_pct": 39.9065461747,
+        "unweighted_literacy_pct": 61.3296634784,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "rede": "municipal",
+        "eligible_n": 1371287,
+        "weight_sum": 1588394.8579564062,
+        "literacy_pct": 57.2050243741,
+        "nonliteracy_pct": 42.7949756259,
+        "unweighted_literacy_pct": 58.103445887,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "rede": "estadual",
+        "eligible_n": 241074,
+        "weight_sum": 280467.8830514135,
+        "literacy_pct": 61.6515178078,
+        "nonliteracy_pct": 38.3484821922,
+        "unweighted_literacy_pct": 62.5368144221,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "rede": "municipal",
+        "eligible_n": 1610754,
+        "weight_sum": 1828682.0221728957,
+        "literacy_pct": 58.8235713265,
+        "nonliteracy_pct": 41.1764286735,
+        "unweighted_literacy_pct": 59.372380885,
+        "rate_suppressed": false
+      }
+    ],
+    "year_uf": [
+      {
+        "ano": 2023,
+        "sigla_uf": "AL",
+        "eligible_n": 32789,
+        "weight_sum": 35502.999980199,
+        "literacy_pct": 43.8840363966,
+        "nonliteracy_pct": 56.1159636034,
+        "unweighted_literacy_pct": 44.4783311476,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "AM",
+        "eligible_n": 48010,
+        "weight_sum": 63055.0000363997,
+        "literacy_pct": 52.2032232602,
+        "nonliteracy_pct": 47.7967767398,
+        "unweighted_literacy_pct": 53.2847323474,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "AP",
+        "eligible_n": 11075,
+        "weight_sum": 12349.0000019999,
+        "literacy_pct": 41.5618132162,
+        "nonliteracy_pct": 58.4381867838,
+        "unweighted_literacy_pct": 41.6162528217,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "BA",
+        "eligible_n": 116412,
+        "weight_sum": 137724.0002197097,
+        "literacy_pct": 36.7773125232,
+        "nonliteracy_pct": 63.2226874768,
+        "unweighted_literacy_pct": 37.3552554719,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "CE",
+        "eligible_n": 95549,
+        "weight_sum": 100348.9999975007,
+        "literacy_pct": 84.4630156917,
+        "nonliteracy_pct": 15.5369843084,
+        "unweighted_literacy_pct": 84.7125558614,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "ES",
+        "eligible_n": 44628,
+        "weight_sum": 50481.9999889983,
+        "literacy_pct": 67.9331417099,
+        "nonliteracy_pct": 32.0668582901,
+        "unweighted_literacy_pct": 68.3673926683,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "GO",
+        "eligible_n": 72868,
+        "weight_sum": 83738.9435495973,
+        "literacy_pct": 66.7219736452,
+        "nonliteracy_pct": 33.2780263548,
+        "unweighted_literacy_pct": 66.9992314871,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "MA",
+        "eligible_n": 66793,
+        "weight_sum": 74957.9999678984,
+        "literacy_pct": 56.4291235257,
+        "nonliteracy_pct": 43.5708764743,
+        "unweighted_literacy_pct": 56.9505786535,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "MG",
+        "eligible_n": 188236,
+        "weight_sum": 210106.9987755911,
+        "literacy_pct": 59.809117733,
+        "nonliteracy_pct": 40.190882267,
+        "unweighted_literacy_pct": 60.8847404322,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "MS",
+        "eligible_n": 37113,
+        "weight_sum": 37113.0,
+        "literacy_pct": 47.7649341201,
+        "nonliteracy_pct": 52.2350658799,
+        "unweighted_literacy_pct": 47.7649341201,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "MT",
+        "eligible_n": 47696,
+        "weight_sum": 54526.0859215977,
+        "literacy_pct": 55.0676349019,
+        "nonliteracy_pct": 44.9323650981,
+        "unweighted_literacy_pct": 55.5581180812,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PA",
+        "eligible_n": 84557,
+        "weight_sum": 104971.9999624993,
+        "literacy_pct": 48.380548068,
+        "nonliteracy_pct": 51.619451932,
+        "unweighted_literacy_pct": 49.2224180139,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PB",
+        "eligible_n": 33714,
+        "weight_sum": 38215.0000242989,
+        "literacy_pct": 51.1220707504,
+        "nonliteracy_pct": 48.8779292496,
+        "unweighted_literacy_pct": 51.5097585573,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PE",
+        "eligible_n": 81148,
+        "weight_sum": 88271.0000628019,
+        "literacy_pct": 58.9535335132,
+        "nonliteracy_pct": 41.0464664868,
+        "unweighted_literacy_pct": 59.1659683541,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PI",
+        "eligible_n": 33067,
+        "weight_sum": 35414.9999115023,
+        "literacy_pct": 52.4833193592,
+        "nonliteracy_pct": 47.5166806408,
+        "unweighted_literacy_pct": 53.1738591345,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PR",
+        "eligible_n": 119385,
+        "weight_sum": 138532.0001236003,
+        "literacy_pct": 73.1204912381,
+        "nonliteracy_pct": 26.8795087619,
+        "unweighted_literacy_pct": 73.6449302676,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "RJ",
+        "eligible_n": 129935,
+        "weight_sum": 159996.9996442946,
+        "literacy_pct": 52.1268081995,
+        "nonliteracy_pct": 47.8731918005,
+        "unweighted_literacy_pct": 53.3736098819,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "RN",
+        "eligible_n": 24937,
+        "weight_sum": 31748.0001319,
+        "literacy_pct": 37.2384677771,
+        "nonliteracy_pct": 62.7615322229,
+        "unweighted_literacy_pct": 37.9837189718,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "RO",
+        "eligible_n": 20116,
+        "weight_sum": 22833.9999952001,
+        "literacy_pct": 64.603972156,
+        "nonliteracy_pct": 35.396027844,
+        "unweighted_literacy_pct": 65.2515410618,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "RS",
+        "eligible_n": 98660,
+        "weight_sum": 121147.9998572083,
+        "literacy_pct": 63.4304646365,
+        "nonliteracy_pct": 36.5695353635,
+        "unweighted_literacy_pct": 64.6969389824,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "SC",
+        "eligible_n": 80656,
+        "weight_sum": 102620.9999240002,
+        "literacy_pct": 61.383323637,
+        "nonliteracy_pct": 38.616676363,
+        "unweighted_literacy_pct": 62.6723368379,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "SE",
+        "eligible_n": 18634,
+        "weight_sum": 19901.1100000003,
+        "literacy_pct": 31.0381179743,
+        "nonliteracy_pct": 68.9618820257,
+        "unweighted_literacy_pct": 31.2976279918,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "TO",
+        "eligible_n": 16831,
+        "weight_sum": 20059.0000276004,
+        "literacy_pct": 43.715020731,
+        "nonliteracy_pct": 56.284979269,
+        "unweighted_literacy_pct": 43.7110094469,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "AC",
+        "eligible_n": 10234,
+        "weight_sum": 12658.03,
+        "literacy_pct": 51.3836671267,
+        "nonliteracy_pct": 48.6163328733,
+        "unweighted_literacy_pct": 51.8956419777,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "AL",
+        "eligible_n": 31575,
+        "weight_sum": 33675.9400000014,
+        "literacy_pct": 48.635464964,
+        "nonliteracy_pct": 51.364535036,
+        "unweighted_literacy_pct": 48.9437846397,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "AM",
+        "eligible_n": 46628,
+        "weight_sum": 58651.2299999976,
+        "literacy_pct": 49.1737001935,
+        "nonliteracy_pct": 50.8262998065,
+        "unweighted_literacy_pct": 49.8370078065,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "AP",
+        "eligible_n": 11214,
+        "weight_sum": 12583.75,
+        "literacy_pct": 46.6183768749,
+        "nonliteracy_pct": 53.3816231251,
+        "unweighted_literacy_pct": 47.2801854824,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "BA",
+        "eligible_n": 104069,
+        "weight_sum": 104069.0,
+        "literacy_pct": 35.9607568056,
+        "nonliteracy_pct": 64.0392431944,
+        "unweighted_literacy_pct": 35.9607568056,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "CE",
+        "eligible_n": 88158,
+        "weight_sum": 89848.2200000036,
+        "literacy_pct": 85.3115064494,
+        "nonliteracy_pct": 14.6884935506,
+        "unweighted_literacy_pct": 85.327480206,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "DF",
+        "eligible_n": 22111,
+        "weight_sum": 27683.2300000011,
+        "literacy_pct": 59.1343206699,
+        "nonliteracy_pct": 40.86567933,
+        "unweighted_literacy_pct": 59.4274343087,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "ES",
+        "eligible_n": 42751,
+        "weight_sum": 47552.510000003,
+        "literacy_pct": 71.7038280419,
+        "nonliteracy_pct": 28.2961719581,
+        "unweighted_literacy_pct": 72.0872026385,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "GO",
+        "eligible_n": 70799,
+        "weight_sum": 77185.0600000049,
+        "literacy_pct": 72.7448550276,
+        "nonliteracy_pct": 27.2551449724,
+        "unweighted_literacy_pct": 73.0208053786,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "MA",
+        "eligible_n": 62974,
+        "weight_sum": 69300.2300000032,
+        "literacy_pct": 59.646396556,
+        "nonliteracy_pct": 40.353603444,
+        "unweighted_literacy_pct": 60.1661002954,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "MG",
+        "eligible_n": 180771,
+        "weight_sum": 203521.2000000031,
+        "literacy_pct": 72.0754692877,
+        "nonliteracy_pct": 27.9245307123,
+        "unweighted_literacy_pct": 72.5923959042,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "MS",
+        "eligible_n": 37212,
+        "weight_sum": 41336.4100000008,
+        "literacy_pct": 55.8714702123,
+        "nonliteracy_pct": 44.1285297877,
+        "unweighted_literacy_pct": 56.5059658175,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "MT",
+        "eligible_n": 45083,
+        "weight_sum": 50992.3100000028,
+        "literacy_pct": 60.5864492117,
+        "nonliteracy_pct": 39.4135507883,
+        "unweighted_literacy_pct": 60.9719850054,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PA",
+        "eligible_n": 83193,
+        "weight_sum": 100007.2500000024,
+        "literacy_pct": 48.2027553002,
+        "nonliteracy_pct": 51.7972446998,
+        "unweighted_literacy_pct": 48.7721322707,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PB",
+        "eligible_n": 31004,
+        "weight_sum": 35127.8300000008,
+        "literacy_pct": 55.9631209784,
+        "nonliteracy_pct": 44.0368790216,
+        "unweighted_literacy_pct": 56.6088246678,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PE",
+        "eligible_n": 75953,
+        "weight_sum": 80374.6600000039,
+        "literacy_pct": 60.7865215231,
+        "nonliteracy_pct": 39.2134784769,
+        "unweighted_literacy_pct": 61.07066212,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PI",
+        "eligible_n": 31105,
+        "weight_sum": 32796.610000001,
+        "literacy_pct": 59.8263662007,
+        "nonliteracy_pct": 40.1736337993,
+        "unweighted_literacy_pct": 60.2700530461,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PR",
+        "eligible_n": 119806,
+        "weight_sum": 138958.920000004,
+        "literacy_pct": 70.421812432,
+        "nonliteracy_pct": 29.578187568,
+        "unweighted_literacy_pct": 70.7969550774,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "RJ",
+        "eligible_n": 125671,
+        "weight_sum": 151233.5600000129,
+        "literacy_pct": 55.2579334904,
+        "nonliteracy_pct": 44.7420665096,
+        "unweighted_literacy_pct": 55.8887889808,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "RN",
+        "eligible_n": 22848,
+        "weight_sum": 29404.2900000004,
+        "literacy_pct": 39.291103441,
+        "nonliteracy_pct": 60.708896559,
+        "unweighted_literacy_pct": 39.9597338936,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "RO",
+        "eligible_n": 20027,
+        "weight_sum": 22680.07,
+        "literacy_pct": 62.6318613655,
+        "nonliteracy_pct": 37.3681386345,
+        "unweighted_literacy_pct": 63.0199231038,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "RS",
+        "eligible_n": 89562,
+        "weight_sum": 108062.4357861209,
+        "literacy_pct": 44.7561620255,
+        "nonliteracy_pct": 55.2438379745,
+        "unweighted_literacy_pct": 45.7705276791,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "SC",
+        "eligible_n": 69035,
+        "weight_sum": 98545.7099999987,
+        "literacy_pct": 62.0198078638,
+        "nonliteracy_pct": 37.9801921362,
+        "unweighted_literacy_pct": 63.6503223003,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "SE",
+        "eligible_n": 17802,
+        "weight_sum": 19430.9000000004,
+        "literacy_pct": 38.3919427304,
+        "nonliteracy_pct": 61.6080572696,
+        "unweighted_literacy_pct": 38.5630827997,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "SP",
+        "eligible_n": 395444,
+        "weight_sum": 443732.9994382114,
+        "literacy_pct": 58.1354490179,
+        "nonliteracy_pct": 41.8645509821,
+        "unweighted_literacy_pct": 58.5625271846,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "TO",
+        "eligible_n": 16799,
+        "weight_sum": 19737.55,
+        "literacy_pct": 50.0537300729,
+        "nonliteracy_pct": 49.9462699271,
+        "unweighted_literacy_pct": 50.1220310733,
+        "rate_suppressed": false
+      }
+    ],
+    "year_uf_network": [
+      {
+        "ano": 2023,
+        "sigla_uf": "AL",
+        "rede": "estadual",
+        "eligible_n": 1434,
+        "weight_sum": 1620.0000007,
+        "literacy_pct": 38.6499801068,
+        "nonliteracy_pct": 61.3500198932,
+        "unweighted_literacy_pct": 37.2384937238,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "AL",
+        "rede": "municipal",
+        "eligible_n": 31355,
+        "weight_sum": 33882.999979499,
+        "literacy_pct": 44.1342849342,
+        "nonliteracy_pct": 55.8657150658,
+        "unweighted_literacy_pct": 44.8094402807,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "AM",
+        "rede": "estadual",
+        "eligible_n": 11863,
+        "weight_sum": 14102.0000225002,
+        "literacy_pct": 62.629934966,
+        "nonliteracy_pct": 37.370065034,
+        "unweighted_literacy_pct": 63.2470707241,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "AM",
+        "rede": "municipal",
+        "eligible_n": 36147,
+        "weight_sum": 48953.0000139014,
+        "literacy_pct": 49.199577137,
+        "nonliteracy_pct": 50.800422863,
+        "unweighted_literacy_pct": 50.0152156472,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "AP",
+        "rede": "estadual",
+        "eligible_n": 2859,
+        "weight_sum": 3274.0000008,
+        "literacy_pct": 40.6994953871,
+        "nonliteracy_pct": 59.3005046129,
+        "unweighted_literacy_pct": 40.6785589367,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "AP",
+        "rede": "municipal",
+        "eligible_n": 8216,
+        "weight_sum": 9075.0000012,
+        "literacy_pct": 41.8729127834,
+        "nonliteracy_pct": 58.1270872166,
+        "unweighted_literacy_pct": 41.9425511198,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "BA",
+        "rede": "estadual",
+        "eligible_n": 191,
+        "weight_sum": 248.9999994,
+        "literacy_pct": 42.8335009064,
+        "nonliteracy_pct": 57.1664990936,
+        "unweighted_literacy_pct": 47.6439790576,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "BA",
+        "rede": "municipal",
+        "eligible_n": 116221,
+        "weight_sum": 137475.0002203104,
+        "literacy_pct": 36.7663433222,
+        "nonliteracy_pct": 63.2336566778,
+        "unweighted_literacy_pct": 37.3383467704,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "CE",
+        "rede": "estadual",
+        "eligible_n": 452,
+        "weight_sum": 516.0000007,
+        "literacy_pct": 78.7494794862,
+        "nonliteracy_pct": 21.2505205138,
+        "unweighted_literacy_pct": 78.3185840708,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "CE",
+        "rede": "municipal",
+        "eligible_n": 95097,
+        "weight_sum": 99832.9999968007,
+        "literacy_pct": 84.4925468556,
+        "nonliteracy_pct": 15.5074531444,
+        "unweighted_literacy_pct": 84.7429466755,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "ES",
+        "rede": "estadual",
+        "eligible_n": 2650,
+        "weight_sum": 2941.0000046,
+        "literacy_pct": 74.583764494,
+        "nonliteracy_pct": 25.416235506,
+        "unweighted_literacy_pct": 75.5094339623,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "ES",
+        "rede": "municipal",
+        "eligible_n": 41978,
+        "weight_sum": 47540.9999843986,
+        "literacy_pct": 67.5217182723,
+        "nonliteracy_pct": 32.4782817277,
+        "unweighted_literacy_pct": 67.916527705,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "GO",
+        "rede": "estadual",
+        "eligible_n": 122,
+        "weight_sum": 137.9999987,
+        "literacy_pct": 76.5931715186,
+        "nonliteracy_pct": 23.4068284814,
+        "unweighted_literacy_pct": 77.868852459,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "GO",
+        "rede": "municipal",
+        "eligible_n": 72746,
+        "weight_sum": 83600.9435508972,
+        "literacy_pct": 66.7056792681,
+        "nonliteracy_pct": 33.2943207319,
+        "unweighted_literacy_pct": 66.9810023919,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "MA",
+        "rede": "estadual",
+        "eligible_n": 155,
+        "weight_sum": 175.0000014,
+        "literacy_pct": 72.3816455924,
+        "nonliteracy_pct": 27.6183544076,
+        "unweighted_literacy_pct": 72.2580645161,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "MA",
+        "rede": "municipal",
+        "eligible_n": 66638,
+        "weight_sum": 74782.9999664985,
+        "literacy_pct": 56.3917929642,
+        "nonliteracy_pct": 43.6082070358,
+        "unweighted_literacy_pct": 56.9149734386,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "MG",
+        "rede": "estadual",
+        "eligible_n": 41495,
+        "weight_sum": 45633.0003128994,
+        "literacy_pct": 63.6518960788,
+        "nonliteracy_pct": 36.3481039212,
+        "unweighted_literacy_pct": 65.2223159417,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "MG",
+        "rede": "municipal",
+        "eligible_n": 146741,
+        "weight_sum": 164473.9984627081,
+        "literacy_pct": 58.7429461369,
+        "nonliteracy_pct": 41.2570538631,
+        "unweighted_literacy_pct": 59.658173244,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "MS",
+        "rede": "estadual",
+        "eligible_n": 671,
+        "weight_sum": 671.0,
+        "literacy_pct": 43.0700447094,
+        "nonliteracy_pct": 56.9299552906,
+        "unweighted_literacy_pct": 43.0700447094,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "MS",
+        "rede": "municipal",
+        "eligible_n": 36442,
+        "weight_sum": 36442.0,
+        "literacy_pct": 47.8513802755,
+        "nonliteracy_pct": 52.1486197245,
+        "unweighted_literacy_pct": 47.8513802755,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "MT",
+        "rede": "estadual",
+        "eligible_n": 2818,
+        "weight_sum": 3270.43,
+        "literacy_pct": 49.5130609736,
+        "nonliteracy_pct": 50.4869390264,
+        "unweighted_literacy_pct": 50.6032647268,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "MT",
+        "rede": "municipal",
+        "eligible_n": 44878,
+        "weight_sum": 51255.6559215973,
+        "literacy_pct": 55.422051305,
+        "nonliteracy_pct": 44.577948695,
+        "unweighted_literacy_pct": 55.86924551,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PA",
+        "rede": "estadual",
+        "eligible_n": 6589,
+        "weight_sum": 7469.9999788,
+        "literacy_pct": 57.0697294538,
+        "nonliteracy_pct": 42.9302705462,
+        "unweighted_literacy_pct": 57.8691758992,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PA",
+        "rede": "municipal",
+        "eligible_n": 77968,
+        "weight_sum": 97501.9999837009,
+        "literacy_pct": 47.7148367515,
+        "nonliteracy_pct": 52.2851632485,
+        "unweighted_literacy_pct": 48.491688898,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PB",
+        "rede": "estadual",
+        "eligible_n": 1523,
+        "weight_sum": 1803.000002,
+        "literacy_pct": 55.2298847307,
+        "nonliteracy_pct": 44.7701152693,
+        "unweighted_literacy_pct": 54.891661195,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PB",
+        "rede": "municipal",
+        "eligible_n": 32191,
+        "weight_sum": 36412.0000222997,
+        "literacy_pct": 50.9186655925,
+        "nonliteracy_pct": 49.0813344075,
+        "unweighted_literacy_pct": 51.349756143,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PE",
+        "rede": "estadual",
+        "eligible_n": 152,
+        "weight_sum": 172.9999973,
+        "literacy_pct": 79.2519117571,
+        "nonliteracy_pct": 20.7480882429,
+        "unweighted_literacy_pct": 79.6052631579,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PE",
+        "rede": "municipal",
+        "eligible_n": 80996,
+        "weight_sum": 88098.0000655019,
+        "literacy_pct": 58.9136731375,
+        "nonliteracy_pct": 41.0863268625,
+        "unweighted_literacy_pct": 59.1276112401,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PI",
+        "rede": "estadual",
+        "eligible_n": 129,
+        "weight_sum": 151.0000017,
+        "literacy_pct": 48.268684887,
+        "nonliteracy_pct": 51.731315113,
+        "unweighted_literacy_pct": 49.6124031008,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PI",
+        "rede": "municipal",
+        "eligible_n": 32938,
+        "weight_sum": 35263.9999098025,
+        "literacy_pct": 52.5013663707,
+        "nonliteracy_pct": 47.4986336293,
+        "unweighted_literacy_pct": 53.1878073957,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PR",
+        "rede": "estadual",
+        "eligible_n": 152,
+        "weight_sum": 196.9999993,
+        "literacy_pct": 80.2907173919,
+        "nonliteracy_pct": 19.7092826081,
+        "unweighted_literacy_pct": 81.5789473684,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "PR",
+        "rede": "municipal",
+        "eligible_n": 119233,
+        "weight_sum": 138335.0001243,
+        "literacy_pct": 73.1102802681,
+        "nonliteracy_pct": 26.8897197319,
+        "unweighted_literacy_pct": 73.6348158647,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "RJ",
+        "rede": "municipal",
+        "eligible_n": 129935,
+        "weight_sum": 159996.9996442946,
+        "literacy_pct": 52.1268081995,
+        "nonliteracy_pct": 47.8731918005,
+        "unweighted_literacy_pct": 53.3736098819,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "RN",
+        "rede": "estadual",
+        "eligible_n": 4250,
+        "weight_sum": 5293.9999648,
+        "literacy_pct": 41.4947099661,
+        "nonliteracy_pct": 58.5052900339,
+        "unweighted_literacy_pct": 42.0235294118,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "RN",
+        "rede": "municipal",
+        "eligible_n": 20687,
+        "weight_sum": 26454.0001670998,
+        "literacy_pct": 36.3867044953,
+        "nonliteracy_pct": 63.6132955047,
+        "unweighted_literacy_pct": 37.1537680669,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "RO",
+        "rede": "estadual",
+        "eligible_n": 1742,
+        "weight_sum": 1993.0000002,
+        "literacy_pct": 58.6469142038,
+        "nonliteracy_pct": 41.3530857962,
+        "unweighted_literacy_pct": 58.9552238806,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "RO",
+        "rede": "municipal",
+        "eligible_n": 18374,
+        "weight_sum": 20840.999995,
+        "literacy_pct": 65.1736385109,
+        "nonliteracy_pct": 34.8263614891,
+        "unweighted_literacy_pct": 65.84848155,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "RS",
+        "rede": "estadual",
+        "eligible_n": 30876,
+        "weight_sum": 37910.9999199002,
+        "literacy_pct": 63.1758716156,
+        "nonliteracy_pct": 36.8241283844,
+        "unweighted_literacy_pct": 64.5873817852,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "RS",
+        "rede": "municipal",
+        "eligible_n": 67784,
+        "weight_sum": 83236.9999373023,
+        "literacy_pct": 63.5464211942,
+        "nonliteracy_pct": 36.4535788058,
+        "unweighted_literacy_pct": 64.7468429128,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "SC",
+        "rede": "estadual",
+        "eligible_n": 18533,
+        "weight_sum": 24594.9999423001,
+        "literacy_pct": 59.2943792275,
+        "nonliteracy_pct": 40.7056207725,
+        "unweighted_literacy_pct": 60.9992985485,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "SC",
+        "rede": "municipal",
+        "eligible_n": 62123,
+        "weight_sum": 78025.9999817013,
+        "literacy_pct": 62.0417911689,
+        "nonliteracy_pct": 37.9582088311,
+        "unweighted_literacy_pct": 63.1714501875,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "SE",
+        "rede": "estadual",
+        "eligible_n": 2866,
+        "weight_sum": 3046.85,
+        "literacy_pct": 35.0591594598,
+        "nonliteracy_pct": 64.9408405402,
+        "unweighted_literacy_pct": 35.3105373343,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "SE",
+        "rede": "municipal",
+        "eligible_n": 15768,
+        "weight_sum": 16854.2600000001,
+        "literacy_pct": 30.3112091542,
+        "nonliteracy_pct": 69.6887908458,
+        "unweighted_literacy_pct": 30.5682394723,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2023,
+        "sigla_uf": "TO",
+        "rede": "municipal",
+        "eligible_n": 16831,
+        "weight_sum": 20059.0000276004,
+        "literacy_pct": 43.715020731,
+        "nonliteracy_pct": 56.284979269,
+        "unweighted_literacy_pct": 43.7110094469,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "AC",
+        "rede": "estadual",
+        "eligible_n": 4486,
+        "weight_sum": 5559.23,
+        "literacy_pct": 55.5015712608,
+        "nonliteracy_pct": 44.4984287392,
+        "unweighted_literacy_pct": 55.8403923317,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "AC",
+        "rede": "municipal",
+        "eligible_n": 5748,
+        "weight_sum": 7098.8,
+        "literacy_pct": 48.1588437482,
+        "nonliteracy_pct": 51.8411562518,
+        "unweighted_literacy_pct": 48.8169798191,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "AL",
+        "rede": "estadual",
+        "eligible_n": 1359,
+        "weight_sum": 1520.07,
+        "literacy_pct": 39.9152670601,
+        "nonliteracy_pct": 60.0847329399,
+        "unweighted_literacy_pct": 40.2501839588,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "AL",
+        "rede": "municipal",
+        "eligible_n": 30216,
+        "weight_sum": 32155.8700000012,
+        "literacy_pct": 49.0476855392,
+        "nonliteracy_pct": 50.9523144608,
+        "unweighted_literacy_pct": 49.3347895155,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "AM",
+        "rede": "estadual",
+        "eligible_n": 11101,
+        "weight_sum": 13529.8599999998,
+        "literacy_pct": 58.1802028994,
+        "nonliteracy_pct": 41.8197971006,
+        "unweighted_literacy_pct": 58.7154310422,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "AM",
+        "rede": "municipal",
+        "eligible_n": 35527,
+        "weight_sum": 45121.3699999998,
+        "literacy_pct": 46.4730570016,
+        "nonliteracy_pct": 53.5269429984,
+        "unweighted_literacy_pct": 47.0627973091,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "AP",
+        "rede": "estadual",
+        "eligible_n": 2927,
+        "weight_sum": 3440.7,
+        "literacy_pct": 39.5538698521,
+        "nonliteracy_pct": 60.4461301479,
+        "unweighted_literacy_pct": 40.1093269559,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "AP",
+        "rede": "municipal",
+        "eligible_n": 8287,
+        "weight_sum": 9143.0500000001,
+        "literacy_pct": 49.2768824408,
+        "nonliteracy_pct": 50.7231175592,
+        "unweighted_literacy_pct": 49.8129600579,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "BA",
+        "rede": "estadual",
+        "eligible_n": 267,
+        "weight_sum": 267.0,
+        "literacy_pct": 34.456928839,
+        "nonliteracy_pct": 65.543071161,
+        "unweighted_literacy_pct": 34.456928839,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "BA",
+        "rede": "municipal",
+        "eligible_n": 103802,
+        "weight_sum": 103802.0,
+        "literacy_pct": 35.9646249591,
+        "nonliteracy_pct": 64.0353750409,
+        "unweighted_literacy_pct": 35.9646249591,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "CE",
+        "rede": "estadual",
+        "eligible_n": 469,
+        "weight_sum": 482.01,
+        "literacy_pct": 78.355220846,
+        "nonliteracy_pct": 21.644779154,
+        "unweighted_literacy_pct": 78.4648187633,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "CE",
+        "rede": "municipal",
+        "eligible_n": 87689,
+        "weight_sum": 89366.2100000035,
+        "literacy_pct": 85.3490262147,
+        "nonliteracy_pct": 14.6509737853,
+        "unweighted_literacy_pct": 85.3641847894,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "DF",
+        "rede": "estadual",
+        "eligible_n": 22111,
+        "weight_sum": 27683.2300000011,
+        "literacy_pct": 59.1343206699,
+        "nonliteracy_pct": 40.86567933,
+        "unweighted_literacy_pct": 59.4274343087,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "ES",
+        "rede": "estadual",
+        "eligible_n": 2226,
+        "weight_sum": 2450.15,
+        "literacy_pct": 86.2061506438,
+        "nonliteracy_pct": 13.7938493562,
+        "unweighted_literacy_pct": 86.567834681,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "ES",
+        "rede": "municipal",
+        "eligible_n": 40525,
+        "weight_sum": 45102.3600000037,
+        "literacy_pct": 70.9160008478,
+        "nonliteracy_pct": 29.0839991521,
+        "unweighted_literacy_pct": 71.2917951882,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "GO",
+        "rede": "estadual",
+        "eligible_n": 50,
+        "weight_sum": 50.96,
+        "literacy_pct": 83.6734693878,
+        "nonliteracy_pct": 16.3265306122,
+        "unweighted_literacy_pct": 84.0,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "GO",
+        "rede": "municipal",
+        "eligible_n": 70749,
+        "weight_sum": 77134.1000000051,
+        "literacy_pct": 72.7376348463,
+        "nonliteracy_pct": 27.2623651537,
+        "unweighted_literacy_pct": 73.0130461208,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "MA",
+        "rede": "estadual",
+        "eligible_n": 127,
+        "weight_sum": 132.09,
+        "literacy_pct": 77.5531834355,
+        "nonliteracy_pct": 22.4468165645,
+        "unweighted_literacy_pct": 77.9527559055,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "MA",
+        "rede": "municipal",
+        "eligible_n": 62847,
+        "weight_sum": 69168.1400000031,
+        "literacy_pct": 59.6122000678,
+        "nonliteracy_pct": 40.3877999322,
+        "unweighted_literacy_pct": 60.1301573663,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "MG",
+        "rede": "estadual",
+        "eligible_n": 38341,
+        "weight_sum": 42002.0500000018,
+        "literacy_pct": 74.4706508373,
+        "nonliteracy_pct": 25.5293491627,
+        "unweighted_literacy_pct": 74.927623171,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "MG",
+        "rede": "municipal",
+        "eligible_n": 142430,
+        "weight_sum": 161519.1500000056,
+        "literacy_pct": 71.4526172284,
+        "nonliteracy_pct": 28.5473827716,
+        "unweighted_literacy_pct": 71.9637716773,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "MS",
+        "rede": "estadual",
+        "eligible_n": 698,
+        "weight_sum": 835.47,
+        "literacy_pct": 48.3332734868,
+        "nonliteracy_pct": 51.6667265132,
+        "unweighted_literacy_pct": 48.5673352436,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "MS",
+        "rede": "municipal",
+        "eligible_n": 36514,
+        "weight_sum": 40500.9400000008,
+        "literacy_pct": 56.0269712259,
+        "nonliteracy_pct": 43.9730287741,
+        "unweighted_literacy_pct": 56.6577203265,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "MT",
+        "rede": "estadual",
+        "eligible_n": 1382,
+        "weight_sum": 1594.37,
+        "literacy_pct": 46.7494998024,
+        "nonliteracy_pct": 53.2505001976,
+        "unweighted_literacy_pct": 47.6845151954,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "MT",
+        "rede": "municipal",
+        "eligible_n": 43701,
+        "weight_sum": 49397.9400000026,
+        "literacy_pct": 61.0330511758,
+        "nonliteracy_pct": 38.9669488242,
+        "unweighted_literacy_pct": 61.3921878218,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PA",
+        "rede": "estadual",
+        "eligible_n": 5859,
+        "weight_sum": 6613.4300000001,
+        "literacy_pct": 56.9539558142,
+        "nonliteracy_pct": 43.0460441858,
+        "unweighted_literacy_pct": 57.1769926609,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PA",
+        "rede": "municipal",
+        "eligible_n": 77334,
+        "weight_sum": 93393.8200000025,
+        "literacy_pct": 47.5830627765,
+        "nonliteracy_pct": 52.4169372235,
+        "unweighted_literacy_pct": 48.1353609021,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PB",
+        "rede": "estadual",
+        "eligible_n": 1180,
+        "weight_sum": 1497.64,
+        "literacy_pct": 55.6655805133,
+        "nonliteracy_pct": 44.3344194867,
+        "unweighted_literacy_pct": 55.1694915254,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PB",
+        "rede": "municipal",
+        "eligible_n": 29824,
+        "weight_sum": 33630.190000001,
+        "literacy_pct": 55.9763712307,
+        "nonliteracy_pct": 44.0236287693,
+        "unweighted_literacy_pct": 56.6657725322,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PE",
+        "rede": "estadual",
+        "eligible_n": 150,
+        "weight_sum": 156.92,
+        "literacy_pct": 71.7754269692,
+        "nonliteracy_pct": 28.2245730308,
+        "unweighted_literacy_pct": 72.0,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PE",
+        "rede": "municipal",
+        "eligible_n": 75803,
+        "weight_sum": 80217.7400000042,
+        "literacy_pct": 60.7650252924,
+        "nonliteracy_pct": 39.2349747076,
+        "unweighted_literacy_pct": 61.0490349986,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PI",
+        "rede": "estadual",
+        "eligible_n": 132,
+        "weight_sum": 137.99,
+        "literacy_pct": 73.9473874918,
+        "nonliteracy_pct": 26.0526125082,
+        "unweighted_literacy_pct": 75.0,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PI",
+        "rede": "municipal",
+        "eligible_n": 30973,
+        "weight_sum": 32658.620000001,
+        "literacy_pct": 59.7667017161,
+        "nonliteracy_pct": 40.2332982839,
+        "unweighted_literacy_pct": 60.207277306,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PR",
+        "rede": "estadual",
+        "eligible_n": 176,
+        "weight_sum": 208.29,
+        "literacy_pct": 62.024101013,
+        "nonliteracy_pct": 37.975898987,
+        "unweighted_literacy_pct": 62.5,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "PR",
+        "rede": "municipal",
+        "eligible_n": 119630,
+        "weight_sum": 138750.630000004,
+        "literacy_pct": 70.4344189284,
+        "nonliteracy_pct": 29.5655810716,
+        "unweighted_literacy_pct": 70.8091615815,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "RJ",
+        "rede": "estadual",
+        "eligible_n": 135,
+        "weight_sum": 220.18,
+        "literacy_pct": 80.0890180761,
+        "nonliteracy_pct": 19.9109819239,
+        "unweighted_literacy_pct": 77.7777777778,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "RJ",
+        "rede": "municipal",
+        "eligible_n": 125536,
+        "weight_sum": 151013.3800000139,
+        "literacy_pct": 55.2217293593,
+        "nonliteracy_pct": 44.7782706407,
+        "unweighted_literacy_pct": 55.8652498088,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "RN",
+        "rede": "estadual",
+        "eligible_n": 3536,
+        "weight_sum": 4636.42,
+        "literacy_pct": 45.3313116586,
+        "nonliteracy_pct": 54.6686883414,
+        "unweighted_literacy_pct": 46.0407239819,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "RN",
+        "rede": "municipal",
+        "eligible_n": 19312,
+        "weight_sum": 24767.8700000003,
+        "literacy_pct": 38.1604070112,
+        "nonliteracy_pct": 61.8395929888,
+        "unweighted_literacy_pct": 38.8463131732,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "RO",
+        "rede": "estadual",
+        "eligible_n": 1409,
+        "weight_sum": 1577.37,
+        "literacy_pct": 63.4664029365,
+        "nonliteracy_pct": 36.5335970635,
+        "unweighted_literacy_pct": 63.662171753,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "RO",
+        "rede": "municipal",
+        "eligible_n": 18618,
+        "weight_sum": 21102.6999999999,
+        "literacy_pct": 62.5694816303,
+        "nonliteracy_pct": 37.4305183697,
+        "unweighted_literacy_pct": 62.9713180793,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "RS",
+        "rede": "estadual",
+        "eligible_n": 28509,
+        "weight_sum": 34091.7549042992,
+        "literacy_pct": 45.7228042105,
+        "nonliteracy_pct": 54.2771957895,
+        "unweighted_literacy_pct": 46.8238100249,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "RS",
+        "rede": "municipal",
+        "eligible_n": 61053,
+        "weight_sum": 73970.6808818051,
+        "literacy_pct": 44.3106540477,
+        "nonliteracy_pct": 55.6893459522,
+        "unweighted_literacy_pct": 45.2786922838,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "SC",
+        "rede": "estadual",
+        "eligible_n": 15773,
+        "weight_sum": 23491.46,
+        "literacy_pct": 59.2906102899,
+        "nonliteracy_pct": 40.7093897101,
+        "unweighted_literacy_pct": 60.4704241425,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "SC",
+        "rede": "municipal",
+        "eligible_n": 53262,
+        "weight_sum": 75054.2499999987,
+        "literacy_pct": 62.8740277866,
+        "nonliteracy_pct": 37.1259722134,
+        "unweighted_literacy_pct": 64.5920168225,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "SE",
+        "rede": "estadual",
+        "eligible_n": 2131,
+        "weight_sum": 2323.03,
+        "literacy_pct": 40.9348996784,
+        "nonliteracy_pct": 59.0651003216,
+        "unweighted_literacy_pct": 41.1074612858,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "SE",
+        "rede": "municipal",
+        "eligible_n": 15671,
+        "weight_sum": 17107.8700000002,
+        "literacy_pct": 38.0466416918,
+        "nonliteracy_pct": 61.9533583082,
+        "unweighted_literacy_pct": 38.2170888903,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "SP",
+        "rede": "estadual",
+        "eligible_n": 96540,
+        "weight_sum": 105966.2081471093,
+        "literacy_pct": 65.8437078554,
+        "nonliteracy_pct": 34.1562921446,
+        "unweighted_literacy_pct": 66.2015744769,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "SP",
+        "rede": "municipal",
+        "eligible_n": 298904,
+        "weight_sum": 337766.7912910488,
+        "literacy_pct": 55.717168176,
+        "nonliteracy_pct": 44.282831824,
+        "unweighted_literacy_pct": 56.0952680459,
+        "rate_suppressed": false
+      },
+      {
+        "ano": 2024,
+        "sigla_uf": "TO",
+        "rede": "municipal",
+        "eligible_n": 16799,
+        "weight_sum": 19737.55,
+        "literacy_pct": 50.0537300729,
+        "nonliteracy_pct": 49.9462699271,
+        "unweighted_literacy_pct": 50.1220310733,
+        "rate_suppressed": false
+      }
+    ]
+  },
+  "student_missing": [
+    {
+      "ano": 2023,
+      "eligible_n": 1502809,
+      "missing_n": 1502809,
+      "weighted_missing_pct": 100.0,
+      "feature": "taxa_alfabetizacao_lag1"
+    },
+    {
+      "ano": 2024,
+      "eligible_n": 1851828,
+      "missing_n": 35558,
+      "weighted_missing_pct": 2.0874334198,
+      "feature": "taxa_alfabetizacao_lag1"
+    },
+    {
+      "ano": 2023,
+      "eligible_n": 1502809,
+      "missing_n": 1502809,
+      "weighted_missing_pct": 100.0,
+      "feature": "media_portugues_lag1"
+    },
+    {
+      "ano": 2024,
+      "eligible_n": 1851828,
+      "missing_n": 35558,
+      "weighted_missing_pct": 2.0874334198,
+      "feature": "media_portugues_lag1"
+    },
+    {
+      "ano": 2023,
+      "eligible_n": 1502809,
+      "missing_n": 7895,
+      "weighted_missing_pct": 0.5181580942,
+      "feature": "media_inse_2021"
+    },
+    {
+      "ano": 2024,
+      "eligible_n": 1851828,
+      "missing_n": 9856,
+      "weighted_missing_pct": 0.5264446757,
+      "feature": "media_inse_2021"
+    },
+    {
+      "ano": 2023,
+      "eligible_n": 1502809,
+      "missing_n": 0,
+      "weighted_missing_pct": 0.0,
+      "feature": "populacao_2022"
+    },
+    {
+      "ano": 2024,
+      "eligible_n": 1851828,
+      "missing_n": 0,
+      "weighted_missing_pct": 0.0,
+      "feature": "populacao_2022"
+    },
+    {
+      "ano": 2023,
+      "eligible_n": 1502809,
+      "missing_n": 0,
+      "weighted_missing_pct": 0.0,
+      "feature": "densidade_2022"
+    },
+    {
+      "ano": 2024,
+      "eligible_n": 1851828,
+      "missing_n": 0,
+      "weighted_missing_pct": 0.0,
+      "feature": "densidade_2022"
+    },
+    {
+      "ano": 2023,
+      "eligible_n": 1502809,
+      "missing_n": 0,
+      "weighted_missing_pct": 0.0,
+      "feature": "log_populacao_2022"
+    },
+    {
+      "ano": 2024,
+      "eligible_n": 1851828,
+      "missing_n": 0,
+      "weighted_missing_pct": 0.0,
+      "feature": "log_populacao_2022"
+    }
+  ],
+  "municipal": {
+    "histogram": [
+      {
+        "ano": 2023,
+        "lower_pct": 0,
+        "upper_pct": 5,
+        "municipalities": 3
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 5,
+        "upper_pct": 10,
+        "municipalities": 7
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 10,
+        "upper_pct": 15,
+        "municipalities": 33
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 15,
+        "upper_pct": 20,
+        "municipalities": 60
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 20,
+        "upper_pct": 25,
+        "municipalities": 117
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 25,
+        "upper_pct": 30,
+        "municipalities": 180
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 30,
+        "upper_pct": 35,
+        "municipalities": 236
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 35,
+        "upper_pct": 40,
+        "municipalities": 276
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 40,
+        "upper_pct": 45,
+        "municipalities": 348
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 45,
+        "upper_pct": 50,
+        "municipalities": 416
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 50,
+        "upper_pct": 55,
+        "municipalities": 486
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 55,
+        "upper_pct": 60,
+        "municipalities": 490
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 60,
+        "upper_pct": 65,
+        "municipalities": 498
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 65,
+        "upper_pct": 70,
+        "municipalities": 484
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 70,
+        "upper_pct": 75,
+        "municipalities": 444
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 75,
+        "upper_pct": 80,
+        "municipalities": 411
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 80,
+        "upper_pct": 85,
+        "municipalities": 332
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 85,
+        "upper_pct": 90,
+        "municipalities": 255
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 90,
+        "upper_pct": 95,
+        "municipalities": 169
+      },
+      {
+        "ano": 2023,
+        "lower_pct": 95,
+        "upper_pct": 100,
+        "municipalities": 203
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 0,
+        "upper_pct": 5,
+        "municipalities": 1
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 5,
+        "upper_pct": 10,
+        "municipalities": 3
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 10,
+        "upper_pct": 15,
+        "municipalities": 13
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 15,
+        "upper_pct": 20,
+        "municipalities": 34
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 20,
+        "upper_pct": 25,
+        "municipalities": 78
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 25,
+        "upper_pct": 30,
+        "municipalities": 144
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 30,
+        "upper_pct": 35,
+        "municipalities": 198
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 35,
+        "upper_pct": 40,
+        "municipalities": 304
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 40,
+        "upper_pct": 45,
+        "municipalities": 330
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 45,
+        "upper_pct": 50,
+        "municipalities": 381
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 50,
+        "upper_pct": 55,
+        "municipalities": 417
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 55,
+        "upper_pct": 60,
+        "municipalities": 451
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 60,
+        "upper_pct": 65,
+        "municipalities": 480
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 65,
+        "upper_pct": 70,
+        "municipalities": 484
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 70,
+        "upper_pct": 75,
+        "municipalities": 474
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 75,
+        "upper_pct": 80,
+        "municipalities": 509
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 80,
+        "upper_pct": 85,
+        "municipalities": 422
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 85,
+        "upper_pct": 90,
+        "municipalities": 287
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 90,
+        "upper_pct": 95,
+        "municipalities": 218
+      },
+      {
+        "ano": 2024,
+        "lower_pct": 95,
+        "upper_pct": 100,
+        "municipalities": 220
+      }
+    ],
+    "correlations": [
+      {
+        "ano": 2023,
+        "feature": "taxa_alfabetizacao_lag1",
+        "paired_municipalities": 0,
+        "pearson": null,
+        "spearman": null
+      },
+      {
+        "ano": 2023,
+        "feature": "media_portugues_lag1",
+        "paired_municipalities": 0,
+        "pearson": null,
+        "spearman": null
+      },
+      {
+        "ano": 2023,
+        "feature": "media_inse_2021",
+        "paired_municipalities": 5321,
+        "pearson": 0.33714386565356946,
+        "spearman": 0.3400342195097843
+      },
+      {
+        "ano": 2023,
+        "feature": "populacao_2022",
+        "paired_municipalities": 5448,
+        "pearson": -0.0493003145780485,
+        "spearman": -0.19475593108171818
+      },
+      {
+        "ano": 2023,
+        "feature": "densidade_2022",
+        "paired_municipalities": 5448,
+        "pearson": -0.059799694405065856,
+        "spearman": -0.0009799623558595467
+      },
+      {
+        "ano": 2023,
+        "feature": "log_populacao_2022",
+        "paired_municipalities": 5448,
+        "pearson": -0.1687995320290797,
+        "spearman": -0.19475593108171818
+      },
+      {
+        "ano": 2024,
+        "feature": "taxa_alfabetizacao_lag1",
+        "paired_municipalities": 5396,
+        "pearson": 0.6358177708449066,
+        "spearman": 0.6273902576093482
+      },
+      {
+        "ano": 2024,
+        "feature": "media_portugues_lag1",
+        "paired_municipalities": 5396,
+        "pearson": 0.6505655462244201,
+        "spearman": 0.6573237135304052
+      },
+      {
+        "ano": 2024,
+        "feature": "media_inse_2021",
+        "paired_municipalities": 5321,
+        "pearson": 0.23936043432048235,
+        "spearman": 0.22977517287594637
+      },
+      {
+        "ano": 2024,
+        "feature": "populacao_2022",
+        "paired_municipalities": 5448,
+        "pearson": -0.049749866268910904,
+        "spearman": -0.19187131863322024
+      },
+      {
+        "ano": 2024,
+        "feature": "densidade_2022",
+        "paired_municipalities": 5448,
+        "pearson": -0.06739270074233128,
+        "spearman": -0.023051890974471027
+      },
+      {
+        "ano": 2024,
+        "feature": "log_populacao_2022",
+        "paired_municipalities": 5448,
+        "pearson": -0.17232214917228347,
+        "spearman": -0.19187131863322024
+      }
+    ],
+    "missing": [
+      {
+        "ano": 2023,
+        "feature": "taxa_alfabetizacao_lag1",
+        "municipalities": 5448,
+        "missing_n": 5448
+      },
+      {
+        "ano": 2023,
+        "feature": "media_portugues_lag1",
+        "municipalities": 5448,
+        "missing_n": 5448
+      },
+      {
+        "ano": 2023,
+        "feature": "media_inse_2021",
+        "municipalities": 5448,
+        "missing_n": 127
+      },
+      {
+        "ano": 2023,
+        "feature": "populacao_2022",
+        "municipalities": 5448,
+        "missing_n": 0
+      },
+      {
+        "ano": 2023,
+        "feature": "densidade_2022",
+        "municipalities": 5448,
+        "missing_n": 0
+      },
+      {
+        "ano": 2023,
+        "feature": "log_populacao_2022",
+        "municipalities": 5448,
+        "missing_n": 0
+      },
+      {
+        "ano": 2024,
+        "feature": "taxa_alfabetizacao_lag1",
+        "municipalities": 5448,
+        "missing_n": 52
+      },
+      {
+        "ano": 2024,
+        "feature": "media_portugues_lag1",
+        "municipalities": 5448,
+        "missing_n": 52
+      },
+      {
+        "ano": 2024,
+        "feature": "media_inse_2021",
+        "municipalities": 5448,
+        "missing_n": 127
+      },
+      {
+        "ano": 2024,
+        "feature": "populacao_2022",
+        "municipalities": 5448,
+        "missing_n": 0
+      },
+      {
+        "ano": 2024,
+        "feature": "densidade_2022",
+        "municipalities": 5448,
+        "missing_n": 0
+      },
+      {
+        "ano": 2024,
+        "feature": "log_populacao_2022",
+        "municipalities": 5448,
+        "missing_n": 0
+      }
+    ],
+    "balanced_panel": {
+      "municipalities": 5396,
+      "only_2023": 52,
+      "only_2024": 52,
+      "mean_change_pp": 2.6712916975537433,
+      "median_change_pp": 2.4899999999999984,
+      "share_increased": 0.5808005930318755
+    },
+    "changes_by_uf": [
+      {
+        "sigla_uf": "AL",
+        "municipalities": 102,
+        "mean_change_pp": 6.6525490196,
+        "median_change_pp": 5.605
+      },
+      {
+        "sigla_uf": "AM",
+        "municipalities": 62,
+        "mean_change_pp": -1.4422580645,
+        "median_change_pp": -2.605
+      },
+      {
+        "sigla_uf": "AP",
+        "municipalities": 16,
+        "mean_change_pp": 7.039375,
+        "median_change_pp": 5.005
+      },
+      {
+        "sigla_uf": "BA",
+        "municipalities": 407,
+        "mean_change_pp": -0.9004422604,
+        "median_change_pp": -0.77
+      },
+      {
+        "sigla_uf": "CE",
+        "municipalities": 184,
+        "mean_change_pp": 0.3485326087,
+        "median_change_pp": 0.34
+      },
+      {
+        "sigla_uf": "ES",
+        "municipalities": 78,
+        "mean_change_pp": 4.683974359,
+        "median_change_pp": 3.67
+      },
+      {
+        "sigla_uf": "GO",
+        "municipalities": 244,
+        "mean_change_pp": 7.6066393443,
+        "median_change_pp": 6.33
+      },
+      {
+        "sigla_uf": "MA",
+        "municipalities": 217,
+        "mean_change_pp": 2.0914285714,
+        "median_change_pp": 2.24
+      },
+      {
+        "sigla_uf": "MG",
+        "municipalities": 818,
+        "mean_change_pp": 12.3143765281,
+        "median_change_pp": 14.04
+      },
+      {
+        "sigla_uf": "MS",
+        "municipalities": 79,
+        "mean_change_pp": 8.3918987342,
+        "median_change_pp": 8.19
+      },
+      {
+        "sigla_uf": "MT",
+        "municipalities": 139,
+        "mean_change_pp": 7.8215827338,
+        "median_change_pp": 7.67
+      },
+      {
+        "sigla_uf": "PA",
+        "municipalities": 144,
+        "mean_change_pp": 2.4392361111,
+        "median_change_pp": 1.45
+      },
+      {
+        "sigla_uf": "PB",
+        "municipalities": 221,
+        "mean_change_pp": 5.1261085973,
+        "median_change_pp": 5.35
+      },
+      {
+        "sigla_uf": "PE",
+        "municipalities": 184,
+        "mean_change_pp": 5.2481521739,
+        "median_change_pp": 5.275
+      },
+      {
+        "sigla_uf": "PI",
+        "municipalities": 224,
+        "mean_change_pp": 6.2323214286,
+        "median_change_pp": 3.81
+      },
+      {
+        "sigla_uf": "PR",
+        "municipalities": 398,
+        "mean_change_pp": -1.7204271357,
+        "median_change_pp": -1.81
+      },
+      {
+        "sigla_uf": "RJ",
+        "municipalities": 92,
+        "mean_change_pp": 3.0507608696,
+        "median_change_pp": 2.665
+      },
+      {
+        "sigla_uf": "RN",
+        "municipalities": 165,
+        "mean_change_pp": 5.2134545455,
+        "median_change_pp": 5.86
+      },
+      {
+        "sigla_uf": "RO",
+        "municipalities": 52,
+        "mean_change_pp": 2.1053846154,
+        "median_change_pp": 2.95
+      },
+      {
+        "sigla_uf": "RS",
+        "municipalities": 443,
+        "mean_change_pp": -19.9553047404,
+        "median_change_pp": -19.87
+      },
+      {
+        "sigla_uf": "SC",
+        "municipalities": 289,
+        "mean_change_pp": 1.2335986159,
+        "median_change_pp": 1.66
+      },
+      {
+        "sigla_uf": "SE",
+        "municipalities": 75,
+        "mean_change_pp": 6.7036,
+        "median_change_pp": 5.9
+      },
+      {
+        "sigla_uf": "SP",
+        "municipalities": 624,
+        "mean_change_pp": 3.1169070513,
+        "median_change_pp": 3.43
+      },
+      {
+        "sigla_uf": "TO",
+        "municipalities": 139,
+        "mean_change_pp": 8.2075539568,
+        "median_change_pp": 8.96
+      }
+    ],
+    "targets_2024_by_uf": [
+      {
+        "sigla_uf": "AC",
+        "municipalities": 22,
+        "assessable": 0,
+        "met": 0,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": null
+      },
+      {
+        "sigla_uf": "AL",
+        "municipalities": 102,
+        "assessable": 102,
+        "met": 56,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 54.9019607843
+      },
+      {
+        "sigla_uf": "AM",
+        "municipalities": 62,
+        "assessable": 48,
+        "met": 13,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 27.0833333333
+      },
+      {
+        "sigla_uf": "AP",
+        "municipalities": 16,
+        "assessable": 16,
+        "met": 7,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 43.75
+      },
+      {
+        "sigla_uf": "BA",
+        "municipalities": 407,
+        "assessable": 394,
+        "met": 75,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 19.0355329949
+      },
+      {
+        "sigla_uf": "CE",
+        "municipalities": 184,
+        "assessable": 184,
+        "met": 168,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 91.3043478261
+      },
+      {
+        "sigla_uf": "ES",
+        "municipalities": 78,
+        "assessable": 78,
+        "met": 59,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 75.641025641
+      },
+      {
+        "sigla_uf": "GO",
+        "municipalities": 245,
+        "assessable": 243,
+        "met": 196,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 80.658436214
+      },
+      {
+        "sigla_uf": "MA",
+        "municipalities": 217,
+        "assessable": 216,
+        "met": 112,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 51.8518518519
+      },
+      {
+        "sigla_uf": "MG",
+        "municipalities": 830,
+        "assessable": 801,
+        "met": 637,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 79.5255930087
+      },
+      {
+        "sigla_uf": "MS",
+        "municipalities": 79,
+        "assessable": 79,
+        "met": 52,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 65.8227848101
+      },
+      {
+        "sigla_uf": "MT",
+        "municipalities": 140,
+        "assessable": 139,
+        "met": 89,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 64.0287769784
+      },
+      {
+        "sigla_uf": "PA",
+        "municipalities": 144,
+        "assessable": 136,
+        "met": 46,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 33.8235294118
+      },
+      {
+        "sigla_uf": "PB",
+        "municipalities": 221,
+        "assessable": 220,
+        "met": 113,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 51.3636363636
+      },
+      {
+        "sigla_uf": "PE",
+        "municipalities": 184,
+        "assessable": 184,
+        "met": 112,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 60.8695652174
+      },
+      {
+        "sigla_uf": "PI",
+        "municipalities": 224,
+        "assessable": 224,
+        "met": 131,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 58.4821428571
+      },
+      {
+        "sigla_uf": "PR",
+        "municipalities": 399,
+        "assessable": 395,
+        "met": 185,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 46.835443038
+      },
+      {
+        "sigla_uf": "RJ",
+        "municipalities": 92,
+        "assessable": 90,
+        "met": 36,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 40.0
+      },
+      {
+        "sigla_uf": "RN",
+        "municipalities": 166,
+        "assessable": 139,
+        "met": 67,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 48.2014388489
+      },
+      {
+        "sigla_uf": "RO",
+        "municipalities": 52,
+        "assessable": 52,
+        "met": 27,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 51.9230769231
+      },
+      {
+        "sigla_uf": "RS",
+        "municipalities": 455,
+        "assessable": 421,
+        "met": 40,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 9.5011876485
+      },
+      {
+        "sigla_uf": "SC",
+        "municipalities": 289,
+        "assessable": 238,
+        "met": 132,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 55.4621848739
+      },
+      {
+        "sigla_uf": "SE",
+        "municipalities": 75,
+        "assessable": 75,
+        "met": 37,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 49.3333333333
+      },
+      {
+        "sigla_uf": "SP",
+        "municipalities": 626,
+        "assessable": 621,
+        "met": 321,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 51.690821256
+      },
+      {
+        "sigla_uf": "TO",
+        "municipalities": 139,
+        "assessable": 137,
+        "met": 77,
+        "strict_boundary_not_met": 0,
+        "met_pct_of_assessable": 56.204379562
+      }
+    ],
+    "targets_2024_total": {
+      "municipalities": 5448,
+      "assessable": 5232,
+      "met": 2788,
+      "missing": 216
+    }
+  },
+  "coverage": {
+    "2023": {
+      "raw_rows": 1747439,
+      "eligible_rows": 1502809,
+      "excluded_grade": 0,
+      "excluded_network": 0,
+      "excluded_missing_identity_context": 0,
+      "excluded_missing_label": 0,
+      "excluded_nonpositive_or_missing_weight": 244630,
+      "municipalities": 4871,
+      "municipality_network_contexts": 5881
+    },
+    "2024": {
+      "raw_rows": 2120560,
+      "eligible_rows": 1851828,
+      "excluded_grade": 0,
+      "excluded_network": 25,
+      "excluded_missing_identity_context": 0,
+      "excluded_missing_label": 0,
+      "excluded_nonpositive_or_missing_weight": 268707,
+      "municipalities": 5517,
+      "municipality_network_contexts": 6535
+    }
+  },
+  "input_audit": [
+    {
+      "filename": "alunos_2023.parquet",
+      "allowed_years": [
+        2023
+      ],
+      "sha256": "10518a1d8858b516cace1ea28f6b945b52b907baf53a895e17a11eeda7fe8aab"
+    },
+    {
+      "filename": "alunos_2024.parquet",
+      "allowed_years": [
+        2024
+      ],
+      "sha256": "f7fbb6fe72062bd8336de9f1df12c7f943b088179995f46aa7dd7c88d32aadf1"
+    },
+    {
+      "filename": "municipios.parquet",
+      "predicate": "ano IN (2023,2024)",
+      "allowed_years": [
+        2023,
+        2024
+      ],
+      "sha256": "7f8e67ab40b4fa30f7398101328f7fbb100bd552254772bf715b3147a9070f95"
+    }
+  ],
+  "interpretation": [
+    "Student rates use positive official weights within the observed eligible population, not a causal or population-universal claim.",
+    "Municipal correlations, histograms, changes and targets give each municipality equal weight; they are not individual effects.",
+    "Published municipal estimates and the eligible student mart can have different coverage/denominators; their means are not interchangeable with an official national indicator.",
+    "Cross-year population coverage changes; balanced municipality comparisons do not follow the same students.",
+    "Missing 2023 lag context is structural: the frozen AEEB series starts in 2023. Do not replace it with zero.",
+    "The 2024 target edition may differ from later revisions; >80 is not achieved by a value exactly equal to80.",
+    "Development-only means restricted data, not a claim that this notebook predates the frozen modeling protocol. Do not reopen model selection.",
+    "2024 municipality-grouped development/CV and reserve precede a frozen 2025 test. Identifiers and contemporaneous outcomes are not features."
+  ],
+  "observational_hypotheses": [
+    "Prior municipal literacy may be associated with subsequent municipal literacy and contextual student risk; temporal association is not causation.",
+    "INSE may be associated with municipal outcomes; ecological associations cannot diagnose a student's abilities or family circumstances.",
+    "UF/network contrasts may reflect coverage, composition and structural conditions; this analysis does not identify treatment effects."
+  ],
+  "figures": [
+    "01_weighted_network.png",
+    "02_weighted_uf.png",
+    "03_context_missing.png",
+    "04_municipal_distribution.png",
+    "05_context_correlations.png",
+    "06_balanced_changes.png",
+    "07_targets_2024.png"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "run_id": "run-c0dde53efb206a89",
+  "started_at_utc": "2026-11-02T20:24:11.097752+00:00",
+  "elapsed_seconds": 4807.649850299815,
+  "python": "3.13.15",
+  "sklearn": "1.9.1",
+  "numpy": "2.5.4",
+  "pandas": "2.3.3",
+  "source_fingerprint": "aff04ac326b8784fb38ccd56a0b52fb40a6c7e6eac4eb480454669fd70688aa8",
+  "protocol_hash": "941cc70d9410d4b7e97551aad065d4b989346330ff3cd34e4f4a7a598f245c5f",
+  "input_manifest_hash": "68e5ea6ba3294d83e36a800ce2cfba3772ce82dd3aad2b9914de696ff1824ca4",
+  "temporal_lock_verified": true,
+  "evaluated_artifact_reload_verified": true,
+  "evaluated_artifact_decisions_verified": true,
+  "status": "completed",
+  "smoke": false,
+  "git_revision": "33ea6a190fdedf5cbcf485cfb392591d046e839c"
+}
