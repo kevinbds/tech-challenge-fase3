@@ -203,7 +203,8 @@ def run_experiments(marts_dir: Path, output_dir: Path, protocol_path: Path, *, s
     started_at = datetime.now(UTC).isoformat()
     preparation_hash = verify_preparation(marts_dir)
     protocol = json.loads(protocol_path.read_text(encoding="utf-8"))
-    if protocol.get("forest_inference_jobs", 1) != 1:
+    inference_jobs = protocol.get("forest_inference_jobs", 1)
+    if type(inference_jobs) is not int or inference_jobs != 1:
         raise ValueError("The audited protocol requires forest_inference_jobs=1")
     protocol_hash = _hash_object(protocol)
     input_hash = _input_manifest(marts_dir)

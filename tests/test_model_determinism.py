@@ -69,9 +69,10 @@ def test_regression_forest_inference_is_serial_and_export_is_exact():
     np.testing.assert_array_equal(model.predict(X), inference_only_copy(model).predict(X))
 
 
-def test_protocol_rejects_parallel_inference_policy(tmp_path, monkeypatch):
+@pytest.mark.parametrize("invalid_policy", [0, 2, 8, True, 1.0, "1", None])
+def test_protocol_rejects_parallel_inference_policy(tmp_path, monkeypatch, invalid_policy):
     monkeypatch.setattr(experiments, "verify_preparation", lambda _: "verified-fixture")
     path = tmp_path / "protocol.json"
-    path.write_text(json.dumps({"forest_inference_jobs": 8}), encoding="utf-8")
+    path.write_text(json.dumps({"forest_inference_jobs": invalid_policy}), encoding="utf-8")
     with pytest.raises(ValueError, match="forest_inference_jobs=1"):
         experiments.run_experiments(tmp_path, tmp_path / "run", path)
