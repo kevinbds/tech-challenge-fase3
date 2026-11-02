@@ -9,7 +9,7 @@ modelos com referências simples e apoiar a investigação de municípios que
 podem ficar abaixo das metas oficiais.
 
 A base educacional dá continuidade à
-[fase 2](https://github.com/kevinbds/tech-challenge-fase2-alfabetizacao-pipeline/tree/d583233a633bf878c3c72308569140564404bbab).
+[fase 2](https://github.com/kevinbds/tech-challenge-fase2-alfabetizacao-pipeline).
 As camadas Bronze, Silver e Gold são reconstruídas localmente em DuckDB e
 Parquet. Da [fase 1](https://github.com/kevinbds/tech-challenge-fase1-nps-preditivo),
 o trabalho retém a organização da análise e o cuidado com validação e comunicação.
