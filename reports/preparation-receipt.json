@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "local-f903329983a639b4",
+  "input_manifest_hash": "f903329983a639b43f6997b4d8542b12b8e6960c34e0765e1b399fb708e99493",
+  "outputs": {
+    "gold/comparativo_meta_resultado.parquet": {
+      "sha256": "49cdb5b7a409a605128ba650e63f8ec55580e1a280a6014cc28cfd93cdbcd256",
+      "bytes": 260777
+    },
+    "gold/evolucao_alfabetizacao.parquet": {
+      "sha256": "193b944996ed34f87366bf783982c3f9d49aa81f5363305c2edb716cc3df5d04",
+      "bytes": 968090
+    },
+    "gold/indicador_municipio.parquet": {
+      "sha256": "1194f0cb4e9b13bb16682d76ad1bf1e9fa9268aad8a828dd23018a514ad86f62",
+      "bytes": 822672
+    },
+    "marts/alunos.parquet": {
+      "sha256": "8d369d13c802225ef8a696779ae52efc9be719c1317c86e20331370c52f2858e",
+      "bytes": 20392744
+    },
+    "marts/alunos_2023.parquet": {
+      "sha256": "10518a1d8858b516cace1ea28f6b945b52b907baf53a895e17a11eeda7fe8aab",
+      "bytes": 8681129
+    },
+    "marts/alunos_2024.parquet": {
+      "sha256": "f7fbb6fe72062bd8336de9f1df12c7f943b088179995f46aa7dd7c88d32aadf1",
+      "bytes": 10789809
+    },
+    "marts/alunos_2025.parquet": {
+      "sha256": "69a389e676f92d5d061fe7271105d0b33b904d23033c2dfe457eea59241d33d3",
+      "bytes": 6210086
+    },
+    "marts/municipios.parquet": {
+      "sha256": "7f8e67ab40b4fa30f7398101328f7fbb100bd552254772bf715b3147a9070f95",
+      "bytes": 723043
+    },
+    "marts/municipios_2026.parquet": {
+      "sha256": "956c4b8b3e42cf03efc4a46ae19e1f0f3faf90facebf7e8e19cf9113040615d3",
+      "bytes": 197644
+    },
+    "silver/alunos_2023.parquet": {
+      "sha256": "2d1233bcb591f00138fcec97f1edd8f92f1f11d25bbcfa8e0d3cc496e23555b5",
+      "bytes": 21496523
+    },
+    "silver/alunos_2024.parquet": {
+      "sha256": "67398add133f08abdf9e4290166711c6543d7b63e82199937b8a27a812bd9b51",
+      "bytes": 18556903
+    },
+    "silver/alunos_2025.parquet": {
+      "sha256": "e0cf87b2cf6a57cffd89d3ae210470397ed6185f7b9e333ee3e5beb868cbe6f6",
+      "bytes": 22939094
+    },
+    "silver/censo_municipio.parquet": {
+      "sha256": "22522d5fbd5b8a0338a6117339ea7dd60ee27b44c26777ea6b57e30da996112d",
+      "bytes": 68287
+    },
+    "silver/diretorio_municipio.parquet": {
+      "sha256": "e00fa7872dd65188ed7b75e9666804096b441ae09a79fec45c8ceaf23748036f",
+      "bytes": 51527
+    },
+    "silver/inse_municipio.parquet": {
+      "sha256": "a1d882653f27f4170c86131903ff3fe942c27ddf8fdb862be4cd6cba2b283aa1",
+      "bytes": 24570
+    },
+    "silver/metas.parquet": {
+      "sha256": "d8704af82c405abb0789f3217b3ab6a80d3cce4e0664595ec7712833884ae8fe",
+      "bytes": 173741
+    },
+    "silver/quarantine_identity_2023.parquet": {
+      "sha256": "d7b7155ef9cec79f1738168b4864a357d82c768fd0e4a2aed2a0a1465d90437b",
+      "bytes": 367
+    },
+    "silver/quarantine_identity_2024.parquet": {
+      "sha256": "d7b7155ef9cec79f1738168b4864a357d82c768fd0e4a2aed2a0a1465d90437b",
+      "bytes": 367
+    },
+    "silver/quarantine_identity_2025.parquet": {
+      "sha256": "798331582f76a6fab3683321b8e91dd22048fb8c68f6d00a91bd66491a68c6dc",
+      "bytes": 7734
+    },
+    "silver/uf.parquet": {
+      "sha256": "8a86f0a5da298975d220371a9068b4efc550fdada2e99b9560ae95e5e377742c",
+      "bytes": 12839
+    }
+  },
+  "coverage_hash": "ddef5e9511544ba4eb61ddefbe40f7975642d5dd9d7a5c35280795e45973cdf3",
+  "status": "passed"
+}

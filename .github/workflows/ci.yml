@@ -1,0 +1,30 @@
+name: Testes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: astral-sh/setup-uv@d0d8abe699bfb85fec6de9f7adb5ae17292296ff # v6
+        with:
+          python-version: '3.13'
+          enable-cache: true
+      - name: Instalar dependências
+        run: uv sync --frozen --extra dev
+      - name: Instalar navegador
+        run: uv run playwright install --with-deps chromium
+      - name: Verificar código
+        run: uv run ruff check src tests scripts
+      - name: Executar testes
+        run: uv run pytest -q
+      - name: Conferir ambiente
+        run: uv run fase3 doctor

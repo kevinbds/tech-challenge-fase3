@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "development_year": 2024,
+  "test_year": 2025,
+  "forecast_year": 2026,
+  "reserve_municipality_fraction": 0.2,
+  "cv_folds": 5,
+  "max_search_candidates_per_family": 12,
+  "max_threads": 8,
+  "forest_inference_jobs": 1,
+  "memory_budget_gib": 32,
+  "risk_positive_label": 1
+}
