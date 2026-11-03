@@ -17,6 +17,7 @@ from urllib.parse import urlparse
 
 SOURCE_NOTE = "Fontes: INEP AEEB 2023–2025; metas oficiais; INSE 2021; IBGE Censo 2022."
 RISK_NOTE = "Risco = não alfabetizado. Predição contextual; não é diagnóstico individual."
+DECK_AUTHOR = "Kevin Barreto da Silva · RM 374637"
 FORBIDDEN_RECORD_KEYS = {
     "id_aluno",
     "id_escola",
@@ -521,7 +522,7 @@ def _deck(data: dict[str, Any], slides: list[dict[str, str]], css: str, javascri
     sections = []
     for index, slide in enumerate(slides, 1):
         sections.append(
-            f"<section id='slide-{index}' class='slide {_escape(slide.get('theme', ''))} {'active' if index == 1 else ''}' aria-labelledby='title-{index}' aria-hidden='{'false' if index == 1 else 'true'}'>{_fixture_mark(data)}<p class='eyebrow' data-evidence>{_escape(slide['eyebrow'])}</p><span class='slide-number'>{index:02d} / {len(slides):02d}</span><h1 id='title-{index}' tabindex='-1' data-evidence>{_escape(slide['title'])}</h1><div class='slide-body' data-evidence>{slide['body']}</div><p class='source' data-evidence>{_escape(slide['source'])}</p></section>"
+            f"<section id='slide-{index}' class='slide {_escape(slide.get('theme', ''))} {'active' if index == 1 else ''}' aria-labelledby='title-{index}' aria-hidden='{'false' if index == 1 else 'true'}'>{_fixture_mark(data)}<p class='eyebrow' data-evidence>{_escape(slide['eyebrow'])}</p><span class='slide-number'>{index:02d} / {len(slides):02d}</span><h1 id='title-{index}' tabindex='-1' data-evidence>{_escape(slide['title'])}</h1><div class='slide-body' data-evidence>{slide['body']}</div><p class='source' data-evidence>{_escape(slide['source'])}</p><p class='author' data-evidence>{_escape(DECK_AUTHOR)}</p></section>"
         )
     controls = "<nav class='toolbar' aria-label='Controles da apresentação'><p>Alfabetização · Fase 3</p><div><button id='previous' type='button'>Anterior</button> <span id='position' aria-live='polite'>1 / 10</span> <button id='next' type='button'>Próximo</button> <button id='fullscreen' type='button'>Tela cheia</button></div></nav>"
     return _document(
@@ -1054,9 +1055,13 @@ def build_reports(
             )
             + f"<p class='small'>Composição descritiva: {len(regional)} pares cluster/região; até cinco maiores acima. Perfis e UF completos no suplemento.</p>"
         )
+        largest_profiles = sorted(
+            geography["profiles"],
+            key=lambda row: (-row["municipalities"], row["cluster"]),
+        )[:2]
         profile_text = "; ".join(
-            f"cluster {row.get('cluster')}: taxa observada {_fmt(row.get('taxa_alfabetizacao'), 1, '%')}"
-            for row in geography["profiles"][:2]
+            f"cluster {row['cluster']}: {_fmt(row['municipalities'], 0)} municípios, taxa observada {_fmt(row.get('taxa_alfabetizacao'), 1, '%')}"
+            for row in largest_profiles
         )
         if profile_text:
             slides[8]["body"] += (
