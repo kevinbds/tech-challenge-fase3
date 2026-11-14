@@ -225,7 +225,7 @@ stack-data==0.6.3
     # via ipython
 threadpoolctl==3.7.0
     # via scikit-learn
-tornado==6.6
+tornado==6.6.1
     # via
     #   ipykernel
     #   jupyter-client
